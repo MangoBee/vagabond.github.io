@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exploration - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="files/load.css">
+  <script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN: CONTENT -->
+      <section>
+
+        <!-- 1. EXPLORATION -->
+        <article id="exploration" class="card">
+          <h2>Exploration</h2>
+          <p>
+            This section covers the rules for moving over larger distances for longer
+            periods of time. You do not need to roleplay every single moment or detail
+            everything your Hero does minute-by-minute, and the game will “fast forward”
+            through mundane moments.
+          </p>
+        </article>
+
+        <!-- 2. CRAWL -->
+        <article id="crawl" class="card" style="margin-top: 1rem;">
+          <h2>Crawl</h2>
+
+          <p>
+            The Dungeon Crawl is named for the room-by-room “crawling” sequence. This is
+            a small scope exploration phase, and the majority of where most campaigns
+            will spend their playtime.
+          </p>
+
+          <h3>Time</h3>
+          <p>
+            Crawling is measured in Scenes. When you Move to Crawl, a Scene passes.
+          </p>
+
+          <h3>Progress Clocks</h3>
+          <p>
+            A Crawl Clock is a 6-segment Clock that measures Scenes. If using a Clock,
+            one segment is filled when a Scene passes or the party makes a lot of noise.
+            These also require a check for Random Encounters.
+          </p>
+
+          <h3>Movement</h3>
+          <p>
+            You can Move up to your Crawl Speed to an accessible Area during a Crawl if
+            precise measurement is needed. Your Crawl Speed is equal to three times your
+            base Speed.
+          </p>
+
+          <h3>Random Encounters</h3>
+          <p>
+            Anything that would fill a segment of a Progress Clock would also require a
+            check for random encounters. These include the Scene changing, the party
+            making lots of noise, or failing a Skill Check out of Combat.
+          </p>
+
+          <h3>Break Down the Door</h3>
+          <p>
+            Follow <a href="adventuring.html#damaging-objects">Damage to Objects</a>.
+            Without countermeasures, each Check attempt to break the door down makes a
+            lot of noise, even on a passed Check.
+          </p>
+
+          <h3 id="lockpicking">Lockpicking</h3>
+          <p>
+            Lockpicking is a Finesse Check which also requires the Hero making the Check
+            to have a lockpick or similar tool in-hand. On a fail, the lockpick is
+            broken and it counts as having made a lot of noise.
+          </p>
+
+          <h3>Spot Hidden</h3>
+          <p>
+            When looking for anything that isn't in plain sight, you'll need to search
+            during the Scene. If you spend this time searching in an area that has
+            anything hidden in it (typically a 10-foot square area), you will find it.
+          </p>
+
+          <h3>Traps</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Trap</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Save</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Damage &amp; Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Blade</td>
+                <td style="padding:6px;">Reflex</td>
+                <td style="padding:6px;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cave-In</td>
+                <td style="padding:6px;">Reflex</td>
+                <td style="padding:6px;">
+                  3d6 and
+                  <a href="adventuring.html#statuses">Restrained</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Darts</td>
+                <td style="padding:6px;">Reflex</td>
+                <td style="padding:6px;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Dread Wave</td>
+                <td style="padding:6px;">Will</td>
+                <td style="padding:6px;">
+                  <a href="adventuring.html#statuses">Frightened</a> (1 Hour, unless dispelled)
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Electric Shock</td>
+                <td style="padding:6px;">Endure</td>
+                <td style="padding:6px;">
+                  d6 and <a href="adventuring.html#statuses">Dazed</a> (1 Round)
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Flame</td>
+                <td style="padding:6px;">Reflex</td>
+                <td style="padding:6px;">
+                  <a href="adventuring.html#statuses">Burning</a> (Cd6)
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Gas</td>
+                <td style="padding:6px;">Endure</td>
+                <td style="padding:6px;">
+                  <a href="adventuring.html#statuses">Sickened</a> (Cd6 damage)
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Psychic Stun</td>
+                <td style="padding:6px;">Will</td>
+                <td style="padding:6px;">
+                  <a href="adventuring.html#statuses">Paralyzed</a> (1 Hour, unless dispelled)
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Snare</td>
+                <td style="padding:6px;">Reflex</td>
+                <td style="padding:6px;">
+                  <a href="adventuring.html#statuses">Restrained</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Spikes</td>
+                <td style="padding:6px;">Reflex</td>
+                <td style="padding:6px;">d6 (×2 if falling)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:0.75rem;">
+            Traps have an associated Save and Effect that those who fail the Save are
+            subjected to. If a Trap is triggered, Heroes who aren't surprised by it can
+            choose how they react. A helpful reaction may grant them Favor on the Save.
+          </p>
+
+          <h3>Lowest Luck</h3>
+          <p>
+            If it's ever unclear who may be Targeted by a Trap, default to the Hero(es)
+            who have the lowest amount of Luck in their Luck Pool.
+          </p>
+        </article>
+
+        <!-- 3. TRAVEL -->
+        <article id="travel" class="card" style="margin-top: 1rem;">
+          <h2>Travel</h2>
+
+          <p>
+            Journeying to far-off locations requires Travel. This is more common in long
+            campaigns across vast lands than one-shots, and is a large scope exploration
+            phase of the game.
+          </p>
+
+          <h3>Time</h3>
+          <p>
+            During Travel, Time is measured in Shifts. When you Move to Travel, a Shift
+            passes.
+          </p>
+
+          <h3>Progress Clocks</h3>
+          <p>
+            Travel Clocks are 4-segment Clocks that measure Shifts. One segment is filled
+            when a Shift passes, which requires a check for Complications.
+          </p>
+
+          <h3>Limitations</h3>
+          <p>
+            Once you benefit from a Rest, you can Travel for two Shifts. After that, any
+            Shift you Travel until you Rest again will give you 1 Fatigue.
+          </p>
+
+          <h3>Procedure</h3>
+          <p>
+            When Travelling, maps are easiest measured on a Hex Grid, where each Hex
+            represents 6 miles. Follow these steps when you Travel:
+          </p>
+          <ol>
+            <li>
+              <strong>Move:</strong> The party appoints a Navigator who leads them when
+              they Travel. The party determines their Pace and they Move into the Hex
+              they travelled to.
+            </li>
+            <li>
+              <strong>Complications:</strong> Roll on the Complications table. Your
+              Travel Pace may affect the Complication roll, as detailed below.
+            </li>
+            <li>
+              <strong>Survey:</strong> If adjacent Hexes to the new Hex have not been
+              revealed, do so now.
+            </li>
+          </ol>
+
+          <h3>Movement</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Pace</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Mult.</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Complication Roll</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Slow</td>
+                <td style="padding:6px;">×0.5</td>
+                <td style="padding:6px;">Add a d6, use two highest.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Normal</td>
+                <td style="padding:6px;">×1</td>
+                <td style="padding:6px;">Normal</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Fast</td>
+                <td style="padding:6px;">×2</td>
+                <td style="padding:6px;">Add a d6, use two lowest.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:0.75rem;">
+            To determine the amount of miles you can Move when you Travel per Shift at a
+            Normal Pace, divide your Speed by 5. A Group can only Travel at the pace of
+            its slowest member. Your Travel Pace multiplies the distance you Move that
+            Shift by the Multiplier (Mult.).
+          </p>
+
+          <h3>Water Travel</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Vessel</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Travel Speed (mi/Shift)</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Capacity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Canoe</td>
+                <td style="padding:6px;">12 mi</td>
+                <td style="padding:6px;">5g</td>
+                <td style="padding:6px;">5 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Caravel</td>
+                <td style="padding:6px;">30 mi</td>
+                <td style="padding:6px;">1000g</td>
+                <td style="padding:6px;">1000 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Galley</td>
+                <td style="padding:6px;">24 mi</td>
+                <td style="padding:6px;">3000g</td>
+                <td style="padding:6px;">3000 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Keelboat</td>
+                <td style="padding:6px;">6 mi</td>
+                <td style="padding:6px;">300g</td>
+                <td style="padding:6px;">300 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Longship</td>
+                <td style="padding:6px;">30 mi</td>
+                <td style="padding:6px;">1000g</td>
+                <td style="padding:6px;">1000 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Rowboat</td>
+                <td style="padding:6px;">6 mi</td>
+                <td style="padding:6px;">5g</td>
+                <td style="padding:6px;">30 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Sailboat</td>
+                <td style="padding:6px;">30 mi</td>
+                <td style="padding:6px;">1000g</td>
+                <td style="padding:6px;">1000 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Warship</td>
+                <td style="padding:6px;">24 mi</td>
+                <td style="padding:6px;">2500g</td>
+                <td style="padding:6px;">2500 Slots</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top:1rem;">Foraging</h3>
+          <p>
+            You can Forage while you Travel at a
+            <a href="downtime.html">Slow Pace</a>.
+          </p>
+
+          <h3>Hazardous Lands</h3>
+          <p>
+            Biomes such as Jungles, Mountains, and Swamps halve the number of miles you
+            can Move to Travel each Shift.
+          </p>
+
+          <h3>Complications</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">d66</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Complication</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px; text-align:center;">11</td>
+                <td style="padding:6px;">
+                  <strong>Hazard:</strong> Group must pass Reflex Saves or take 2d6 damage
+                  (Avalanche, Landslide, etc).
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">12</td>
+                <td style="padding:6px;">
+                  <strong>Lost:</strong> Navigator must pass a Survival Check or the group
+                  returns to the previous hex.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">13</td>
+                <td style="padding:6px;">
+                  <strong>Obscurement:</strong> (Fog/Smoke/Sandstorm) Hinders sight-based
+                  Checks beyond Near for d6 Shifts.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">14–15</td>
+                <td style="padding:6px;">
+                  <strong>Storm:</strong> This hex and all adjacent hexes are Difficult
+                  Terrain for Cd4 Shifts.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">16</td>
+                <td style="padding:6px;">
+                  <strong>Temperature:</strong> (Sweltering Heat/Bitter Cold) in this hex
+                  and all adjacent for Cd4 Shifts.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">21–66</td>
+                <td style="padding:6px;">
+                  No complication.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+      </section>
+
+      <!-- RIGHT COLUMN: QUICK INDEX -->
+      <aside>
+        <div class="card side-card"> 
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+            <span>🔍</span>
+            <input type="search" placeholder="To Be Implimented" />
+          </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card side-floating-left">
+            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
+            <ol class="contents-list">
+              <li><a href="#exploration">Exploration</a></li>
+              <li><a href="#crawl">Crawl</a></li>
+              <li><a href="#travel">Travel</a></li>
+            </ol>
+
+            <a class="pill"
+               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer">
+              Character Sheet
+            </a>
+          </div>
+
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

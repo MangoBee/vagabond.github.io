@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Magic & Spells - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="files/load.css">
+  <script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN: CONTENT -->
+      <section>
+
+        <!-- SPELLS -->
+        <article id="spells" class="card">
+          <h2>Spells</h2>
+
+          <p>
+            Spells create devastating and miraculous effects. Casters can change them
+            when they Cast to design their own signature spells.
+          </p>
+        </article>
+
+        <!-- CASTING SPELLS -->
+        <article id="casting-spells" class="card" style="margin-top: 1rem;">
+          <h2>Casting Spells</h2>
+
+          <p>
+            To Cast a Spell, your hands must either be open, or holding a spellbook,
+            staff, or trinket.
+          </p>
+
+          <p>When you Cast a Spell, you determine:</p>
+
+          <ol>
+            <li>
+              Are you casting it to deal <strong>Damage</strong>, cause the
+              <strong>Effect</strong>, or both? Choosing to only deal 1d6 damage or
+              cause the Effect requires no Mana. Choosing to do both costs 1 Mana.
+            </li>
+            <li>
+              Who the Spell <strong>Targets</strong> with its Delivery.
+            </li>
+            <li>
+              How long it lasts, known as <strong>Duration</strong>.
+            </li>
+          </ol>
+
+          <h3>When to Make Cast Checks</h3>
+          <p>
+            When you Cast a Spell, you don't make a Cast Check unless an unwilling
+            Being is a Target.
+          </p>
+
+          <h3>Damage</h3>
+          <p>
+            Spells with a Damage Base can be cast to deal <strong>d6 damage</strong>.
+            You can spend Mana to increase the damage by <strong>1d6 per Mana</strong>
+            spent to do so.
+          </p>
+
+          <h3>Effect</h3>
+          <p>
+            The Spell's effect describes what it subjects the Target to, unless the
+            Spell is Cast only to deal damage.
+          </p>
+
+          <h3>Delivery</h3>
+          <p>
+            Delivery describes how a Spell Targets. Many Deliveries are Areas of
+            Effect (AoEs).
+          </p>
+
+          <!-- DELIVERY TABLE -->
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Delivery</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Increase</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Aura</td>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">+1 per +5 feet to the radius</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cone</td>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">+2 per additional 5-feet of length</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cube</td>
+                <td style="padding:6px;">1</td>
+                <td style="padding:6px;">+1 per additional 5-foot-cube</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Imbue</td>
+                <td style="padding:6px;">0</td>
+                <td style="padding:6px;">+2 per additional Target</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Glyph</td>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">—</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Line</td>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">+1 per 10 feet of extra length</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Remote</td>
+                <td style="padding:6px;">0</td>
+                <td style="padding:6px;">+1 per additional Target</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Sphere</td>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">+1 per +5 feet to the radius</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Touch</td>
+                <td style="padding:6px;">0</td>
+                <td style="padding:6px;">—</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:0.75rem;">
+            If the delivery is an Area, its Area of Effect (AoE) Targets everything in it,
+            regardless of whether you can sense them, unless you specify otherwise:
+          </p>
+
+          <p><strong>Aura:</strong> 10-foot-radius from you, affecting Targets of your choice within.</p>
+          <p><strong>Cone:</strong> 15-foot cone Area in front of you.</p>
+          <p><strong>Cube:</strong> 5-foot cube Area you can see.</p>
+          <p>
+            <strong>Glyph:</strong> Creates a 5-foot-square glyph on a Target you can see,
+            where there is no other glyph within Close. The Spell is cast in a 5-foot cube
+            from the glyph when you choose. Afterwards, the glyph disappears.
+          </p>
+          <p>
+            <strong>Imbue:</strong> Targets a Weapon equipped by a willing Being within Far.
+            If it hits a Target while Imbued, you can spend 1 Mana to Cast the Spell as if
+            by Touch against the Target without using an Action.
+          </p>
+          <p>
+            <strong>Line:</strong> 5-foot-wide, 30-foot-long, 10-feet-tall Area. Expanding
+            the Area’s width by 5 feet or height by up to 10 feet doubles the Cost.
+          </p>
+          <p><strong>Remote:</strong> An ambience or bolt on a Target.</p>
+          <p><strong>Sphere:</strong> 5-foot-radius sphere in sight.</p>
+          <p><strong>Touch:</strong> A Close Target, or yourself.</p>
+
+          <h3>Duration</h3>
+          <p>
+            Spell damage is instant and the effects last until your next Turn unless you
+            Focus when you Cast it. If you do, the Spell lasts until you stop the
+            Focus. If the Spell includes an unwilling Being as a Target, you must spend
+            1 Mana and pass a Cast Check to keep the Focus each Round.
+          </p>
+          <p>
+            <strong>Continual:</strong> Continual duration doesn't require Focus, and lasts
+            until dismissed (no Action).
+          </p>
+
+          <h3>Example Cast Situation</h3>
+          <p>
+            “I want to Cast Burn as a 15-foot sphere of flames that deals 3d6 damage and
+            keep it active.”
+          </p>
+          <ul>
+            <li><strong>Damage:</strong> 2 Mana for additional damage.</li>
+            <li><strong>Effect:</strong> None.</li>
+            <li><strong>Delivery:</strong> 3 Mana from the sphere’s area.</li>
+            <li><strong>Duration:</strong> Focus (1 Mana each subsequent Turn).</li>
+          </ul>
+          <p>
+            <strong>Total:</strong> 5 Mana, and 1 Mana each Round to Focus.
+          </p>
+        </article>
+
+        <!-- TRINKETS TABLE -->
+        <article id="trinkets-table" class="card" style="margin-top: 1rem;">
+          <h2>Trinkets Table</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">d20</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Arcane</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Divine</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Occult</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Primal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">1</td>
+                <td style="padding:6px;">Wand</td>
+                <td style="padding:6px;">Holy symbol</td>
+                <td style="padding:6px;">Indecipherable rune</td>
+                <td style="padding:6px;">Totem</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">Pointy hat</td>
+                <td style="padding:6px;">Prayer beads</td>
+                <td style="padding:6px;">Meteor chunk</td>
+                <td style="padding:6px;">Bag of animal bones</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">3</td>
+                <td style="padding:6px;">Polyhedral dice</td>
+                <td style="padding:6px;">Consecrated staff</td>
+                <td style="padding:6px;">Foul snail's shell</td>
+                <td style="padding:6px;">Primordial crystal</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">4</td>
+                <td style="padding:6px;">Summoning salts</td>
+                <td style="padding:6px;">Bag of spice</td>
+                <td style="padding:6px;">Haunting mask</td>
+                <td style="padding:6px;">Cairn stones</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">5</td>
+                <td style="padding:6px;">Puzzle box</td>
+                <td style="padding:6px;">Omphalos</td>
+                <td style="padding:6px;">Eyed triangle amulet</td>
+                <td style="padding:6px;">Bone/wooden mask</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">6</td>
+                <td style="padding:6px;">Glass orb</td>
+                <td style="padding:6px;">Ancient elven ring</td>
+                <td style="padding:6px;">Tool of alien origin</td>
+                <td style="padding:6px;">Mistletoe sprig</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">7</td>
+                <td style="padding:6px;">Mysterious lodestone</td>
+                <td style="padding:6px;">Gilded chalice</td>
+                <td style="padding:6px;">Silverized rodent corpse</td>
+                <td style="padding:6px;">Antlers</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">8</td>
+                <td style="padding:6px;">Clockwork hourglass</td>
+                <td style="padding:6px;">Glowing crystal</td>
+                <td style="padding:6px;">Aberrant brain in a jar</td>
+                <td style="padding:6px;">Insect in amber</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">9</td>
+                <td style="padding:6px;">Charred statuettes</td>
+                <td style="padding:6px;">Sacred paper figure</td>
+                <td style="padding:6px;">Cracked femur</td>
+                <td style="padding:6px;">Tiny cryptid’s corpse</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">10</td>
+                <td style="padding:6px;">Runic cube</td>
+                <td style="padding:6px;">Dragon's tear</td>
+                <td style="padding:6px;">Vial of demon's blood</td>
+                <td style="padding:6px;">Abacus of treant’s wood</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">11</td>
+                <td style="padding:6px;">Ancient dark lotus</td>
+                <td style="padding:6px;">Sacred feather</td>
+                <td style="padding:6px;">Lantern, sheds teal light</td>
+                <td style="padding:6px;">Roc’s feather</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">12</td>
+                <td style="padding:6px;">Set of keys</td>
+                <td style="padding:6px;">Altar vessel of flame</td>
+                <td style="padding:6px;">Staring doll</td>
+                <td style="padding:6px;">Colorchanging hair lock</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">13</td>
+                <td style="padding:6px;">Savant's headband</td>
+                <td style="padding:6px;">Stone from a holy site</td>
+                <td style="padding:6px;">Small humanoid effigy</td>
+                <td style="padding:6px;">Echoing flute</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">14</td>
+                <td style="padding:6px;">Disk of information</td>
+                <td style="padding:6px;">Vegetable in holy water</td>
+                <td style="padding:6px;">Yellow wallpaper</td>
+                <td style="padding:6px;">Nuts from a sacred tree</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">15</td>
+                <td style="padding:6px;">Map of starsigns</td>
+                <td style="padding:6px;">Bloodstained spearhead</td>
+                <td style="padding:6px;">Dead cockatrice egg</td>
+                <td style="padding:6px;">Fist-sized claw</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">16</td>
+                <td style="padding:6px;">Kaleidoscope</td>
+                <td style="padding:6px;">Blood-soaked fabric</td>
+                <td style="padding:6px;">Shining trapezohedron</td>
+                <td style="padding:6px;">Necklace of runestones</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">17</td>
+                <td style="padding:6px;">Abacus</td>
+                <td style="padding:6px;">Petrified unicorn's eye</td>
+                <td style="padding:6px;">Black mirror</td>
+                <td style="padding:6px;">Petrified banana and figs</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">18</td>
+                <td style="padding:6px;">Smoking pipe</td>
+                <td style="padding:6px;">Handheld sundial</td>
+                <td style="padding:6px;">Crown of snakes</td>
+                <td style="padding:6px;">Staff of twisted branches</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">19</td>
+                <td style="padding:6px;">Jar of primordial slurry</td>
+                <td style="padding:6px;">Tooth of a peacekeeper</td>
+                <td style="padding:6px;">Uncanny stone mask</td>
+                <td style="padding:6px;">Flask of mermaid's water</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">20</td>
+                <td style="padding:6px;">Fan of owl feathers</td>
+                <td style="padding:6px;">Saint's heart</td>
+                <td style="padding:6px;">Bizarre keystone</td>
+                <td style="padding:6px;">Brownie's shoe</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:0.75rem;">
+            Trinkets are 1 Slot, 1H Grip Items that are used by Casters to channel magic.
+          </p>
+        </article>
+
+        <!-- SPELLS TABLE -->
+        <article id="spells-table" class="card" style="margin-top: 1rem;">
+          <h2>Spells Table</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Adhere</td>
+                <td style="padding:6px;">Amplify</td>
+                <td style="padding:6px;">Animate</td>
+                <td style="padding:6px;">Apoplex</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Aqua</td>
+                <td style="padding:6px;">Babble</td>
+                <td style="padding:6px;">Beast</td>
+                <td style="padding:6px;">Bless</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Blink</td>
+                <td style="padding:6px;">Burn</td>
+                <td style="padding:6px;">Charm</td>
+                <td style="padding:6px;">Color</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Confuse</td>
+                <td style="padding:6px;">Control</td>
+                <td style="padding:6px;">Cure</td>
+                <td style="padding:6px;">Disintegrate</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Dispel</td>
+                <td style="padding:6px;">Enchant</td>
+                <td style="padding:6px;">Enflesh</td>
+                <td style="padding:6px;">Erupt</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Exalt</td>
+                <td style="padding:6px;">Fade</td>
+                <td style="padding:6px;">Fear</td>
+                <td style="padding:6px;">Fog</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Forge</td>
+                <td style="padding:6px;">Freeze</td>
+                <td style="padding:6px;">Frostburn</td>
+                <td style="padding:6px;">Gas</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Goop</td>
+                <td style="padding:6px;">Guide</td>
+                <td style="padding:6px;">Gust</td>
+                <td style="padding:6px;">Hold</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Hymn</td>
+                <td style="padding:6px;">Junk</td>
+                <td style="padding:6px;">Kinesis</td>
+                <td style="padding:6px;">Knock</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Leech</td>
+                <td style="padding:6px;">Levitate</td>
+                <td style="padding:6px;">Life</td>
+                <td style="padding:6px;">Light</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Mend</td>
+                <td style="padding:6px;">Mirage</td>
+                <td style="padding:6px;">Moon</td>
+                <td style="padding:6px;">Morph</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Mute</td>
+                <td style="padding:6px;">Polymorph</td>
+                <td style="padding:6px;">Portal</td>
+                <td style="padding:6px;">Raise</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Rust</td>
+                <td style="padding:6px;">Shade</td>
+                <td style="padding:6px;">Shrink</td>
+                <td style="padding:6px;">Sleep</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Speak</td>
+                <td style="padding:6px;">Sprout</td>
+                <td style="padding:6px;">Tempo</td>
+                <td style="padding:6px;">Terraform</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Truth</td>
+                <td style="padding:6px;">Ward</td>
+                <td style="padding:6px;">Zap</td>
+                <td style="padding:6px;"></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- SPELLS A–C -->
+      <article id="spells-a-c" class="card" style="margin-top: 1rem;">
+  <h2>Spells A–C</h2>
+
+  <h3>Adhere</h3>
+  <p><strong>Damage Base:</strong> Acid</p>
+  <p>
+    The Target is covered in sticky slime for the duration, causing the Area out to Close
+    around it to be Difficult Terrain. Targeted Beings are considered Vulnerable for the
+    purpose of ending the Restrained Status.
+  </p>
+  <p>
+    Targeted Objects are secured to whatever they are in contact with or the next thing
+    they contact during the duration. A Being with Might or HD equal to or lower than
+    your Level can't move the Object. You can increase your effective Level for the
+    Casting by spending additional Mana, increasing it by 1 per Mana spent to do so.
+  </p>
+
+  <h3>Amplify</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Any sound from the Target is amplified tenfold for the duration. During this time,
+    Targets can't surprise others and all Checks to find them based on the sounds they
+    make are Favored.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Animate</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    You animate an Item that occupies no more than 1 Slot in the Area or carried by
+    the Target.
+  </p>
+  <p>
+    For the duration, the Item gains a Speed of 30' (Fly), and uses the Object Armor &amp;
+    HP rules for its Stats. It obeys your commands, which you can issue when
+    you Focus on this Spell. If it is a Weapon, it can make attacks using your Cast Skill.
+  </p>
+
+  <h3>Apoplex</h3>
+  <p><strong>Damage Base:</strong> Fire</p>
+  <p>
+    The Target is Berserked for the duration.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Aqua</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    This Spell can create and destroy fresh water in the following ways:
+  </p>
+  <p>
+    <strong>Area:</strong> The space within is emptied or filled with water. If the Area
+    is occupied by a Being, this requires a Cast Check. You choose if this water
+    remains or dries up after the duration.
+  </p>
+  <p>
+    <strong>Target:</strong> This can push an Item that occupies 1 or fewer Slots, or a
+    Being with Level or HD 1 or lower. You can increase this number by spending
+    additional Mana on the Cast, increasing it by 1 per Mana spent to do so.
+  </p>
+  <p>
+    <strong>Distance:</strong> This pushes the Target 5', and you can increase the
+    distance pushed by spending Mana, increasing the distance by 5' per Mana
+    spent to do so.
+  </p>
+
+  <h3>Babble</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    When the Check passes, and each time you Focus on the Cast for the duration,
+    you can cause the Target to loudly and coherently repeat everything you mentally
+    command them to. They are otherwise mute.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Beast</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    You call forth a Beast or Beasts that can fit in the Area or nearest open space to
+    the Target. They remain for the duration and can have a cumulative HD total count
+    no higher than half your Level (minimum 1).
+  </p>
+  <p>
+    You must spend 1 Mana each Turn you Focus on this Spell after the Casting. You can
+    choose to let the Beasts act independently, or to command them when you Focus.
+    They use your Cast Skill for any Check they make.
+  </p>
+
+  <h3>Bless</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    For the duration, Targeted Objects count as Silvered, and Targeted Beings of your
+    choice have a d4 bonus to Saves.
+  </p>
+  <p>
+    Further, if the Target is freestanding water, it permanently becomes holy water.
+  </p>
+
+  <h3>Blink</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target can skip their Move to teleport to an empty space they can see within
+    Near. They can teleport through space occupied by other Beings, but can't teleport
+    through spaces they couldn't otherwise Move through.
+  </p>
+
+  <h3>Burn</h3>
+  <p><strong>Damage Base:</strong> Fire</p>
+  <p>
+    If the Target isn't Immune to Fire, they are Burning (Cd4, or until it is doused).
+    This Burning Status does not require Focus.
+  </p>
+  <p><strong>Crit:</strong> The Cd4 instead starts at a Cd6.</p>
+
+  <h3>Charm</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Enthrallment keeps the Target Charmed for the duration, ending early if it takes
+    damage or if you Cast this Spell again.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Color</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    For the duration, Targeted Beings are Blinded and Objects are changed in color.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Confuse</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target is Confused for the duration.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Control</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Targeted Objects can be manipulated in small ways, such as flipping a lever or
+    tipping a glass over. This magic can't lift an Object.
+  </p>
+  <p>
+    Targeted Beings become Charmed and obey your commands for the duration. This Spell
+    automatically fails if the Target's Level or HD are equal to or higher than your Level,
+    and it automatically ends if you command it to cause harm to itself.
+  </p>
+  <p>
+    You can spend Mana to increase your effective Level for the Casting by 1 per Mana
+    spent to do so.
+  </p>
+
+  <h3>Cure</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    If the Target is Blinded or Sickened, the Status ends and they are immune to these
+    Statuses for the duration.
+  </p>
+
+</article>
+
+
+        <!-- SPELLS D–G -->
+        <article id="spells-d-g" class="card" style="margin-top: 1rem;">
+  <h2>Spells D–G</h2>
+
+  <h3>Disintegrate</h3>
+  <p><strong>Damage Base:</strong> Shock</p>
+  <p>
+    A nonmagical, non-metal Target of 1 or fewer Slots is destroyed. The Slots of the
+    Target can increase by spending Mana, increasing by 1 per Mana spent to do so.
+    Any Target that is reduced to 0 HP or destroyed by this Spell is reduced to ash.
+  </p>
+
+  <h3>Dispel</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    You suspend a magic effect for the duration, treating it as an unwilling Target.
+  </p>
+  <p><strong>Crit:</strong> The effect is completely dispelled if it is not a Relic's Power.</p>
+
+  <h3>Enchant</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    An Item that is a Target or equipped by the Target is considered a Relic for the duration.
+  </p>
+  <p>
+    Additionally, you can grant the Item the Relic Power of <strong>Bonus</strong> for this
+    time by spending additional Mana per Item granted this Power when you Cast this Spell:
+  </p>
+  <table style="border-collapse:collapse; margin:0.5rem 0;">
+    <thead>
+      <tr>
+        <th style="border-bottom:1px solid var(--border); padding:4px;">Bonus</th>
+        <th style="border-bottom:1px solid var(--border); padding:4px;">Mana Cost per</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:4px;">+1</td>
+        <td style="padding:4px;">5 Mana</td>
+      </tr>
+      <tr>
+        <td style="padding:4px;">+2</td>
+        <td style="padding:4px;">10 Mana</td>
+      </tr>
+      <tr>
+        <td style="padding:4px;">+3</td>
+        <td style="padding:4px;">15 Mana</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Enflesh</h3>
+  <p><strong>Damage Base:</strong> Acid</p>
+  <p>
+    Targeted, non-Relic fabric, stone, metal, or wood is turned to hair, tissue, and bone
+    for the duration. Alternatively, if the Target is turned to stone through a curse or
+    magic, the effect ends.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Erupt</h3>
+  <p><strong>Damage Base:</strong> Fire</p>
+  <p>
+    Magma coats the nearest surface to the Target for the duration (minimum 5-foot square),
+    causing it to be Difficult Terrain that deals d6 damage the first time a Being enters
+    the Area on a Turn and when it ends its Turn in the Area.
+  </p>
+  <p><strong>Crit:</strong> Targets Burning (Cd4 while in the Area).</p>
+
+  <h3>Exalt</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Targets gain a +1 bonus to each damage die they deal and to Will Saves against
+    <strong>Frightened</strong>. This bonus is doubled if a Hellspawn or Undead is the
+    attack's Target or the one forcing the Save.
+  </p>
+
+  <h3>Fade</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target is Invisible for the duration, ending early if they use an Action.
+  </p>
+
+  <h3>Fear</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target is Frightened of another visible Target you choose for the duration,
+    ending early if you Cast this Spell again.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Fog</h3>
+  <p><strong>Damage Base:</strong> Cold</p>
+  <p>
+    You create a cloud that obscures an Area equal to the size of the delivery
+    (minimum 5-foot cube). It Hinders Checks relying on sight of a Target within
+    the fog, and such Checks are treated as if the Target were Vulnerable if they
+    are Attack Checks or Saves.
+  </p>
+
+  <h3>Forge</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    You materialize an Item of 1 Slot or less worth no more than 1g either in an
+    unoccupied space near the Target, worn by the Target, or one Item per 5-foot-cube
+    within the Target area.
+  </p>
+  <p>
+    This magic can create a solid Item made of either copper, iron, glass, stone, or
+    wood. For example, this could create an iron flagon, but not a flagon of ale. If
+    you Target yourself with this Spell, you can Equip the Item when it is created
+    (no Action). Doing so can't cause an Equipped Item to become unequipped.
+  </p>
+  <p>
+    The Item is usable as a physical copy for the duration, then disappears.
+  </p>
+
+  <h3>Freeze</h3>
+  <p><strong>Damage Base:</strong> Cold</p>
+  <p>
+    Any freestanding water in the Area is frozen. If the Target is a Being, its Speed
+    is reduced by 10'.
+  </p>
+  <p>
+    Alternatively, you can create an Object made of ice that can fit within the Area,
+    and is of a shape of your choice (such as an icicle dagger or a block of ice). If
+    needed, the Object has HD: 1 (4 HP) and is Weak: Fire.
+  </p>
+  <p>
+    Any of these effects last for the duration.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+  <h3>Frostburn</h3>
+  <p><strong>Damage Base:</strong> Cold</p>
+  <p>
+    If the Target isn't Immune to Cold, they are Burning (d4, Speed reduced by 10') for
+    the duration, ending early if they take damage from fire or heat.
+  </p>
+  <p><strong>Crit:</strong> Target is instead Burning (d6).</p>
+
+  <h3>Gas</h3>
+  <p><strong>Damage Base:</strong> Poison</p>
+  <p>
+    You create a cloud of gas in an Area equal to the size of the delivery
+    (minimum 5-foot cube). Targets act as Sickened (Vulnerable) while in the Area.
+  </p>
+  <p>
+    <strong>Crit:</strong> The effect lasts 1 Hour, but can be dispersed by strong winds.
+  </p>
+
+  <h3>Goop</h3>
+  <p><strong>Damage Base:</strong> Acid</p>
+  <p>
+    A glob of sticky, acidic sludge coats the nearest surface to the Target (minimum
+    5-foot square) for the duration, causing it to be Difficult Terrain.
+  </p>
+  <p>
+    If also Cast to deal damage, the caustic acid causes those in the Area to be
+    Burning (d6).
+  </p>
+  <p><strong>Crit:</strong> Targets in the Area are also Restrained.</p>
+
+  <h3>Guide</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Checks that rely on sight made against the Target have Favor for the duration.
+  </p>
+  <p><strong>Crit:</strong> Duration is 1 minute (no Focus required).</p>
+
+  <h3>Gust</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target is blasted with a wind shear in the following ways:
+  </p>
+  <p>
+    <strong>Feather:</strong> If Cast on a falling Target, this blast can slow the
+    descent of a falling Medium or smaller Target to a safe Speed for the duration.
+  </p>
+  <p>
+    <strong>Target:</strong> This can push an Item that occupies 1 or fewer Slots, or
+    a Being with Level or HD 1 or lower. You can increase this number by spending
+    additional Mana on the Cast, increasing it by 1 per Mana spent to do so.
+  </p>
+  <p>
+    <strong>Distance:</strong> This pushes the Target 5', and you can increase the
+    distance pushed by spending Mana, increasing the distance by 5' per Mana
+    spent to do so.
+  </p>
+
+</article>
+
+
+        <!-- SPELLS H–M -->
+        <article id="spells-h-m" class="card" style="margin-top: 1rem;">
+  <h2>Spells H–M</h2>
+
+  <h3>Hold</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target is Paralyzed for the duration if its HD or Level is equal to or lower than
+    your Level. You can spend Mana to increase your Level for the purposes of this
+    Casting by 1 per Mana spent to do so.
+  </p>
+  <p>
+    If the Target is an Object, it becomes secured and effectively locked if it is a door,
+    chest, or other means of preventing entry. You must pass a Cast Check any time an
+    attempt is made to manipulate the secured Object to maintain the Focus.
+  </p>
+  <p><strong>Crit:</strong> Duration is 1 minute (no Focus required).</p>
+
+  <h3>Hymn</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    If the Target is Berserk, Charmed, Confused, or Frightened, the Status ends and they
+    are Immune to these Statuses for the duration.
+  </p>
+
+  <h3>Junk</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    You create an Item worth no more than 5s and of 1 Slot or less that fits in the Area
+    of the delivery, in a willing Target's hand, or in the nearest open space to the Target.
+    This Item lacks fine detail and specificity. For example, it could create a key but
+    not the key for a jail cell you are in.
+  </p>
+  <p>
+    This Spell does not require Focus to keep the Item materialized, but the Item
+    disappears when you Cast this Spell again, or dismiss it (no Action required).
+    You can spend additional Mana during the Cast to increase the number of Items created
+    by one per additional Mana spent to do so.
+  </p>
+
+  <h3>Kinesis</h3>
+  <p><strong>Damage Base:</strong> Blunt</p>
+  <p>
+    You shoot an unsecured Target of 1 or less HD or Slots at a Target you can see within
+    Near. If it strikes a Target, it hits them harmlessly unless this is Cast to deal damage.
+  </p>
+  <p>
+    You can spend Mana to increase the Targetable HD or Slots by 1 per Mana spent to do so
+    for that Casting.
+  </p>
+
+  <h3>Knock</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Opens barred, locked, or stuck chests, doors, and gates that you can sense. It does so
+    with an audible knock that can be heard out to 300 feet. This affects secret and magic
+    locks and doors, but you must be aware of them to affect them.
+  </p>
+
+  <h3>Leech</h3>
+  <p><strong>Damage Base:</strong> Poison</p>
+  <p>
+    The Target is Sickened for the duration. While Sickened this way, any healing that
+    affects it instead heals you. Any subsequent Castings of this Spell that damage the
+    Sickened Target also heal you for the damage dealt.
+  </p>
+
+  <h3>Levitate</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target flutters up to 1 foot in the air if they have solid ground below them for
+    the duration. The Target can still Move in the air as if walking. If the Target is a
+    secured Object or an Item that occupies more than 2 Slots, it is unaffected.
+  </p>
+
+  <h3>Life</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    You revive a Target that died from damage in the last Round, restoring it with 1 HP
+    and giving it 1 Fatigue. This Spell does not regenerate missing body parts.
+  </p>
+  <p>
+    In addition, you can spend Mana with this Spell to heal a Target for d6 HP per Mana
+    spent to do so.
+  </p>
+
+  <h3>Light</h3>
+  <p><strong>Damage Base:</strong> Fire</p>
+  <p>
+    The Target sheds Light out to Near for the duration. You can choose to do so by
+    creating a floating mote of light that follows the Target.
+  </p>
+  <p><strong>Crit:</strong> Beings of your choice within the Light when you Cast the Spell are Blinded (Cd4).</p>
+
+  <h3>Mend</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Targeted non-Relic Objects in the Area are repaired on your Turns for the duration,
+    if you can provide 5s of Material per d8 HP or 1 Slot of Items repaired. This Spell
+    can reassemble a broken Item if the pieces of it are held together during the Casting.
+  </p>
+  <p>
+    This Spell also functions as a Life Spell, but only for Artificials.
+  </p>
+
+  <h3>Mirage</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    You create an illusionary Object or effect which fits either within the Area, or on
+    the Target for the duration. The Object isn't tangible and can't deal damage.
+    However, its appearance, movement, and sound it produces are up to you.
+  </p>
+  <p>
+    If any action is taken to investigate the Object, make a Cast Check to determine the
+    outcome. When you Focus on it, you can change any of these aspects of the illusion.
+  </p>
+
+  <h3>Moon</h3>
+  <p><strong>Damage Base:</strong> Cold</p>
+  <p>
+    The Target sheds Moonlight out to Near for the duration. Shapechangers are Burning
+    (d6) while illuminated by this Moonlight.
+  </p>
+
+  <h3>Morph</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    For the duration, the Target’s body is altered in an illusionary manner. This magic
+    is powerful enough to make them seem like a Being of the same Size and Being Type
+    that has the same configuration of limbs and appendages (such as a Human appearing
+    as a Dwarf, but not a horse).
+  </p>
+
+  <h3>Mute</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Sound can't be heard from the Target for the duration, ending early if you Cast this again.
+  </p>
+  <p><strong>Crit:</strong> Duration is continual.</p>
+
+</article>
+
+        <!-- SPELLS N–Z -->
+        <article id="spells-n-z" class="card" style="margin-top: 1rem;">
+  <h2>Spells N–Z</h2>
+
+  <h3>Polymorph</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target becomes a Beast of your choice with HD no higher than your Level for the
+    duration. If the Target is unwilling and its HD are higher than your Level, the Spell fails.
+  </p>
+  <p>During this time, the Target uses:</p>
+  <ul>
+    <li>
+      The Beast's Speed, Passives, Senses, Armor, Immune, Weak, Actions, and Abilities.
+    </li>
+    <li>
+      The Target's HP and, if possible, its Actions and Abilities.
+    </li>
+  </ul>
+  <p>
+    You must spend 1 Mana on your Turns to Focus on this Spell, even for willing Targets.
+  </p>
+
+  <h3>Portal</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    You create a portal on a surface that fits within the Area (minimum 5-foot square),
+    and a second portal of the same size on a surface Near that portal. The portals remain
+    for the duration and can teleport anything smaller than it to an open Close space at
+    the other portal's location.
+  </p>
+  <p>
+    Unsecured Objects don't cost Mana to teleport, but Beings cost 1 Mana. If the Being
+    is unwilling, it also requires a passed Cast Check to teleport it.
+  </p>
+
+  <h3>Raise</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    Corpses in the Area of non-Artifical or Undead Beings with cumulative HD no higher
+    than your Level rise as an Undead under your control for the duration. Afterward,
+    any Undead you raised this way die and can't be raised by this Spell again.
+  </p>
+  <p>
+    You can command your raised Undead when you Focus on this Cast, using your Cast Skill
+    for Checks they make. The Undead you raise this way use their original statblock with
+    the following changes:
+  </p>
+  <ul>
+    <li>It is an Undead.</li>
+    <li>It has Darksight.</li>
+    <li>It is Immune to Poison.</li>
+    <li>It is Weak to Silvered Weapons.</li>
+    <li>It can't be Sickened.</li>
+  </ul>
+
+  <h3>Rust</h3>
+  <p><strong>Damage Base:</strong> Acid</p>
+  <p>
+    Non-Relic metal Objects within the Area rust for the duration. Each Turn when you
+    Focus on this Spell, roll a d6 for each Item. On a roll of 1, the Item breaks. If the
+    Item that breaks is larger than Medium, this creates a 1-foot square hole that is
+    1-foot deep in it.
+  </p>
+
+  <h3>Shade</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target is surrounded by magic darkness out to Close for the duration, which
+    snuffs out nonmagic lights.
+  </p>
+
+  <h3>Shrink</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target's size and damage dice are reduced by one size for the duration.
+  </p>
+  <p><strong>Crit:</strong> Duration is 1 minute (no Focus required).</p>
+
+  <h3>Sleep</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    If the Targets have a cumulative HD total equal to (1 + your Level) or lower, they
+    are knocked Unconscious for the duration, ending early if they take damage or are
+    shaken awake.
+  </p>
+  <p>
+    You can spend Mana to increase your effective Level for the Casting by 1 per Mana
+    spent to do so.
+  </p>
+
+  <h3>Speak</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target is able to speak, understand, and be understood by you. If the Target was
+    not previously capable of speech before gaining the ability to from this Spell, it
+    can't speak through this Spell again after the Cast ends.
+  </p>
+
+  <h3>Sprout</h3>
+  <p><strong>Damage Base:</strong> Blunt</p>
+  <p>
+    You create growing plants on the Target, causing Difficult Terrain out to Close from it.
+  </p>
+  <p>
+    Alternatively, you can cause up to a 5-foot-square patch of plants or fungus to
+    magically grow to optimal harvesting and foraging.
+  </p>
+  <p><strong>Crit:</strong> The Target is Restrained.</p>
+
+  <h3>Tempo</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target's Speed increases or decreases by 5 feet for the duration. The Caster can
+    increase or decrease this amount by 5 feet by spending additional Mana on the Cast
+    for every 1 Mana spent to do so.
+  </p>
+  <p><strong>Crit:</strong> Duration is 1 minute (no Focus required).</p>
+
+  <h3>Terraform</h3>
+  <p><strong>Damage Base:</strong> Blunt</p>
+  <p>
+    You manipulate the loose earth or stone around the Target in the following ways:
+  </p>
+  <p>
+    <strong>Area:</strong> You can manipulate terrain in the Area, either causing it to be
+    Difficult Terrain or creating a Structure that can fit within the area of effect of
+    the Cast for the duration. This magic can't move any terrain that supports an Object.
+  </p>
+  <p>
+    <strong>Being or Object:</strong> Close earth or stone is Difficult Terrain for the
+    duration.
+  </p>
+
+  <h3>Truth</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    The Target can’t lie for the duration.
+  </p>
+  <p><strong>Crit:</strong> The Target is compelled to answer any questions when asked.</p>
+
+  <h3>Ward</h3>
+  <p><strong>Damage Base:</strong> —</p>
+  <p>
+    If the Target takes damage, make a Cast Check. On a pass, you reduce that damage by d6,
+    and you can spend Mana to reduce it by an additional d6 per Mana spent to do so.
+  </p>
+  <p><strong>Crit:</strong> The Target takes no damage.</p>
+
+  <h3>Zap</h3>
+  <p><strong>Damage Base:</strong> Shock</p>
+  <p>
+    The Target is Dazed for the duration if it can be damaged by shocks.
+  </p>
+  <p><strong>Crit:</strong> The Target is Paralyzed, rather than Dazed, for the duration.</p>
+
+</article>
+
+
+      </section>
+
+      <!-- RIGHT COLUMN: QUICK INDEX -->
+      <aside>
+        <div class="card side-card">
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card side-floating-left">
+            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
+            <ol class="contents-list">
+              <li><a href="#spells">Spells</a></li>
+              <li><a href="#casting-spells">Casting Spells</a></li>
+              <li><a href="#trinkets-table">Trinkets Table</a></li>
+              <li><a href="#spells-table">Spells Table</a></li>
+              <li><a href="#spells-a-c">Spells A–C</a></li>
+              <li><a href="#spells-d-g">Spells D–G</a></li>
+              <li><a href="#spells-h-m">Spells H–M</a></li>
+              <li><a href="#spells-n-z">Spells N–Z</a></li>
+            </ol>
+
+            <a class="pill"
+               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer">
+              Character Sheet
+            </a>
+          </div>
+
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Basics - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="files/load.css">
+  <script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN: CONTENT -->
+      <section>
+
+        <!-- BASICS -->
+        <article id="basics" class="card">
+          <h2>Basics</h2>
+          <p>
+            Vagabond is a tabletop roleplaying game where Players play the role of a Hero
+            in the world created by the Referee. You describe your Hero's actions in the
+            scene.
+          </p>
+          <p>
+            When the success of these actions is uncertain, you will make dice rolls
+            called <strong>Checks</strong> to determine the outcome.
+          </p>
+        </article>
+
+        <!-- THE DICE -->
+        <article id="dice" class="card" style="margin-top: 1rem;">
+          <h2>The Dice</h2>
+
+          <p>
+            You'll need a four-sided (d4), six-sided (d6), eight-sided (d8),
+            ten-sided (d10), twelve-sided (d12), and twenty-sided (d20) die.
+          </p>
+
+          <h3>Cumulative Roll (xd6)</h3>
+          <p>
+            Numbers before dice (such as <strong>2d6</strong>) use that many dice for
+            the roll, and add the dice together for the result.
+          </p>
+
+          <h3>Exploding Roll (d6!)</h3>
+          <p>
+            Exploding rolls use an exclamation mark, and add a bonus die of the same size
+            if it rolls its highest value (for example, 6 on a d6!). It continues doing so
+            on any bonus dice rolls as well.
+          </p>
+
+          <h3>Countdown Dice (Cdx)</h3>
+          <p>
+            Roll Countdown dice each Round. If it rolls a 1, it shrinks one size
+            (for example, d6 to d4). A roll of 1 on a Cd4 ends the countdown.
+          </p>
+
+          <h3>d66 Rolls</h3>
+          <p>
+            Roll two d6. Use the first d6 for the tens value and the second d6 for the
+            ones value.
+          </p>
+        </article>
+
+        <!-- STATS -->
+        <article id="stats" class="card" style="margin-top: 1rem;">
+          <h2>Stats</h2>
+
+          <p>
+            Stats are the six numbers that describe your Hero's characteristics. They
+            range from 2 to 7, and determine your Passives, Attack Difficulties, Skill
+            Difficulties, and Saves.
+          </p>
+
+          <ul>
+            <li><strong>Might:</strong> Endurance, strength, and vitality.</li>
+            <li><strong>Dexterity:</strong> Agility, coordination, and reflex.</li>
+            <li><strong>Awareness:</strong> Accuracy, perception, and wisdom.</li>
+            <li><strong>Reason:</strong> Deduction, intelligence, and logic.</li>
+            <li><strong>Presence:</strong> Charisma, soul, and wit.</li>
+            <li><strong>Luck:</strong> Destiny, fate, and success.</li>
+          </ul>
+
+          <p>
+            Stats are covered further in
+            <a href="skills.html">Stats &amp; Skills</a>.
+          </p>
+        </article>
+
+        <!-- CHECKS -->
+        <article id="checks" class="card" style="margin-top: 1rem;">
+          <h2>Checks</h2>
+
+          <p>
+            To make a Check, roll a d20 and compare the result against that Check's
+            Difficulty to determine if the Check is a Crit, Pass, or Fail:
+          </p>
+          <ul>
+            <li><strong>Crit:</strong> d20 rolls an unmodified 20.</li>
+            <li><strong>Pass:</strong> d20 rolls equal to or above Difficulty.</li>
+            <li><strong>Fail:</strong> d20 rolls below Difficulty.</li>
+          </ul>
+
+          <p>
+            To determine this Difficulty, subtract the Check's Stat from 20. If you are
+            Trained with the Check, double the Stat.
+          </p>
+
+          <p><strong>Difficulty = 20 − (Stat × 2 if Trained)</strong></p>
+
+          <h3>Crits</h3>
+          <p>
+            When you Crit on a Check to Attack or Cast, or on a Save, you gain a benefit:
+          </p>
+          <p><strong>Attack / Cast:</strong> You can deal damage to the Target(s) equal to the Stat used.</p>
+          <p>
+            <strong>Save:</strong> You aren't affected by what provoked the Save,
+            and can use an Action.
+          </p>
+
+          <h3>Favor &amp; Hinder</h3>
+          <p>Circumstances may Favor or Hinder a Check:</p>
+          <ul>
+            <li><strong>Favored:</strong> d20 roll with a d6 bonus.</li>
+            <li><strong>Hindered:</strong> d20 roll with a d6 penalty.</li>
+          </ul>
+          <p>
+            Favor and Hinder cancel each other out 1-for-1, and they don't stack. A roll
+            is either Favored or Hindered and only one d6 is rolled for either.
+          </p>
+        </article>
+
+        <!-- HIT POINTS & DAMAGE -->
+        <article id="hitpoints-damage" class="card" style="margin-top: 1rem;">
+          <h2>Hit Points &amp; Damage</h2>
+
+          <p>
+            Hit Points (HP) indicate condition, stamina, and ability to avoid death.
+            Damage causes you to lose HP. To determine your HP, see
+            <a href="skills.html#might">Max HP</a>.
+          </p>
+
+          <h3>Damage</h3>
+          <p>
+            During play, you will deal and take Damage, which is subtracted from the
+            Hit Points (HP) of whoever takes the damage. Damage has a minimum of 0
+            (you can't take negative damage).
+          </p>
+
+          <h3>Damage Source</h3>
+          <p>
+            Rather than specific damage types, the Referee decides if an Ability applies
+            to a source of damage. When you attack with a weapon, describe how you do so,
+            such as piercing with a sword or slashing. Spells are more specific, with
+            <strong>Freeze</strong> being cold, or <strong>Gas</strong>'s poison stench.
+          </p>
+
+          <h3>Dying</h3>
+          <p>Beings can die in any of the following ways:</p>
+          <ul>
+            <li>Their HP is reduced to 0,</li>
+            <li>Their body is destroyed,</li>
+            <li>
+              They have 5
+              <a href="adventuring.html#statuses">Fatigue</a>.
+            </li>
+          </ul>
+          <p>Dead Beings can’t regain HP.</p>
+
+          <h3>Armor / Immune / Weak</h3>
+          <p>
+            Beings can have Armor, Immune, or Weak to certain damage, which affect it in
+            the following ways:
+          </p>
+          <ul>
+            <li><strong>Armor:</strong> Subtracted from Attack damage.</li>
+            <li><strong>Immune:</strong> Unharmed by the damage.</li>
+            <li>
+              <strong>Weak:</strong> Ignores Armor and Immune, and deals an extra damage die.
+            </li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- RIGHT COLUMN: QUICK INDEX -->
+      <aside>
+        <div class="card side-card">
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card side-floating-left">
+            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
+            <ol class="contents-list">
+              <li><a href="#basics">Basics</a></li>
+              <li><a href="#dice">The Dice</a></li>
+              <li><a href="#stats">Stats</a></li>
+              <li><a href="#checks">Checks</a></li>
+              <li><a href="#hitpoints-damage">Hit Points &amp; Damage</a></li>
+            </ol>
+
+            <a class="pill"
+               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer">
+              Character Sheet
+            </a>
+          </div>
+
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

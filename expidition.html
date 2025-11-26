@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expedition - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="files/load.css">
+  <script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+    </header>
+
+    <main>
+      <section>
+        <!-- 1. BEASTS & HUSBANDRY -->
+        <article id="beasts-husbandry" class="card">
+          <h2>Beasts &amp; Husbandry</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Item</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Slots</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Animal feed (per day)</td>
+                <td style="padding:6px; text-align:center;">5c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Barding, light</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Barding, heavy</td>
+                <td style="padding:6px; text-align:center;">2g 50s</td>
+                <td style="padding:6px; text-align:center;">3</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Camel</td>
+                <td style="padding:6px; text-align:center;">10g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cat</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;"><strong>Cattle</strong> (per animal)</td>
+                <td style="padding:6px; text-align:center;">–</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Bison</td>
+                <td style="padding:6px; text-align:center;">25g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Bull</td>
+                <td style="padding:6px; text-align:center;">60g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Cow</td>
+                <td style="padding:6px; text-align:center;">9g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Ox</td>
+                <td style="padding:6px; text-align:center;">5g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;"><strong>Dog</strong> (per animal)</td>
+                <td style="padding:6px; text-align:center;">–</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Common</td>
+                <td style="padding:6px; text-align:center;">2g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Warhound</td>
+                <td style="padding:6px; text-align:center;">10g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Elephant</td>
+                <td style="padding:6px; text-align:center;">20g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;"><strong>Fowl</strong> (per bird)</td>
+                <td style="padding:6px; text-align:center;">–</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Chicken, hen</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Chicken, rooster</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Duck</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;"><strong>Horses</strong> (per animal)</td>
+                <td style="padding:6px; text-align:center;">–</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Draft</td>
+                <td style="padding:6px; text-align:center;">4g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Pony</td>
+                <td style="padding:6px; text-align:center;">3g 50s</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Riding</td>
+                <td style="padding:6px; text-align:center;">7g 50s</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Warhorse</td>
+                <td style="padding:6px; text-align:center;">25g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Mule</td>
+                <td style="padding:6px; text-align:center;">3g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Rabbit</td>
+                <td style="padding:6px; text-align:center;">30s</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Rat</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Rats, bag of 20</td>
+                <td style="padding:6px; text-align:center;">2g</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Saddle &amp; tack</td>
+                <td style="padding:6px; text-align:center;">2g 50s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Stabling (per day)</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 2. CONTAINERS & PACKS -->
+        <article id="containers-packs" class="card" style="margin-top:1rem;">
+          <h2>Containers &amp; Packs</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Item</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Slots</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Capacity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Backpack</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1; 0 while worn</td>
+                <td style="padding:6px;">+2 Slots*</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Bottle, glass</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1½ pints</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Bucket</td>
+                <td style="padding:6px; text-align:center;">5c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 gallon</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cauldron</td>
+                <td style="padding:6px; text-align:center;">2g</td>
+                <td style="padding:6px; text-align:center;">–</td>
+                <td style="padding:6px;">30 gallons</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Flask</td>
+                <td style="padding:6px; text-align:center;">2c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 pint</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Graduate</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1/4 pint</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Jar, clay</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 pint</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Jar, glass</td>
+                <td style="padding:6px; text-align:center;">3s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 pint</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Jar, metal</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 pint</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Jug, clay</td>
+                <td style="padding:6px; text-align:center;">2c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 gallon</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Percolator</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 pint</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Pot, clay</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 gallon</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Pot, iron</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">1 gallon</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Vial, clay</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">4 ounces</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Vial, glass</td>
+                <td style="padding:6px; text-align:center;">3s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">4 ounces</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Vial, metal</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">4 ounces</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Vial, gold-inlaid</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">4 ounces</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top:0.75rem;">
+            * You can only benefit from one backpack at a time.
+          </p>
+        </article>
+
+        <!-- 3. COOKING & FOOD -->
+        <article id="cooking-food" class="card" style="margin-top:1rem;">
+          <h2>Cooking &amp; Food</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Item</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Slots</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Basket</td>
+                <td style="padding:6px; text-align:center;">4s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Brazier</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Bread, loaf of</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Can opener</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cooking tools</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Coffee grounds (1 lb. bag)</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Egg, dozen</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Flour (1 lb. bag)</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Heat mat</td>
+                <td style="padding:6px; text-align:center;">2g 50s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Iron pan</td>
+                <td style="padding:6px; text-align:center;">8s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Iron pot</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Kettle</td>
+                <td style="padding:6px; text-align:center;">8s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+
+              <tr>
+                <td style="padding:6px;"><strong>Meals (per person)</strong></td>
+                <td style="padding:6px; text-align:center;">–</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Horrible</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Poor</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Good</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Delicious</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Excellent</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Opulent</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+
+              <tr>
+                <td style="padding:6px;">Mess kit</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Oil, cooking (flask)</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+
+              <tr>
+                <td style="padding:6px;"><strong>Produce (fruits &amp; vegetables)</strong></td>
+                <td style="padding:6px; text-align:center;">–</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Single</td>
+                <td style="padding:6px; text-align:center;">10c</td>
+                <td style="padding:6px; text-align:center;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">1 lb. bag</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+
+              <tr>
+                <td style="padding:6px;">Rations (1 day)</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Sack</td>
+                <td style="padding:6px; text-align:center;">1c</td>
+                <td style="padding:6px; text-align:center;">0</td>
+              </tr>
+
+              <tr>
+                <td style="padding:6px;"><strong>Spices (per 1 lb.)</strong></td>
+                <td style="padding:6px; text-align:center;">–</td>
+                <td style="padding:6px; text-align:center;">–</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Common</td>
+                <td style="padding:6px; text-align:center;">5c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Exotic</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; padding-left:1.5rem;">Rare</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+
+              <tr>
+                <td style="padding:6px;">Salt (1 lb. bag)</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tankard</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tongs</td>
+                <td style="padding:6px; text-align:center;">3s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tripod, cooking</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Waterskin</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Wax, beeswax (1 lb.)</td>
+                <td style="padding:6px; text-align:center;">3s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Wax, sealing (1 lb.)</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 4. HARDWARE -->
+        <article id="hardware" class="card" style="margin-top:1rem;">
+          <h2>Hardware</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Item</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Slots</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Ball bearings, bag</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Bell, handheld</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Bellows</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Block and tackle</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Bucket</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Chain (10 feet)</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Chalk, piece of</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Chest</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Chisel</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Crowbar</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Drill, hand</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Earplugs</td>
+                <td style="padding:6px; text-align:center;">3s</td>
+                <td style="padding:6px; text-align:center;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Glass, tubing (1-foot)</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Glass cutter</td>
+                <td style="padding:6px; text-align:center;">2g</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Hammer</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Hammer, sledge</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Ladder (10-foot)</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Lockpick</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Magnet, small</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Magnifying glass</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Manacles</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Nails, iron (50)</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Paint, gallon</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Paint, pot</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Pickaxe</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Piton</td>
+                <td style="padding:6px; text-align:center;">5c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Pole (10-foot)</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Pole, collapsing (10-foot)</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Pouch</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Rope (50 feet)</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Sack</td>
+                <td style="padding:6px; text-align:center;">1c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Scissors</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shovel</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Spikes, iron (10)</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tripwire</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Whetstone</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Wood stake</td>
+                <td style="padding:6px; text-align:center;">2c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 5. OUTDOORS -->
+        <article id="outdoors" class="card" style="margin-top:1rem;">
+          <h2>Outdoors</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Item</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Slots</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Air bladder</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Backpack</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1; 0 while worn</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Bedroll</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Caltrops, bag of 10</td>
+                <td style="padding:6px; text-align:center;">4s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Fishing rod</td>
+                <td style="padding:6px; text-align:center;">30s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Fishing tackle</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Flint &amp; steel</td>
+                <td style="padding:6px; text-align:center;">4s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Grappling hook</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Hammock</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Heatsuit outfit</td>
+                <td style="padding:6px; text-align:center;">2g</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Hunting trap</td>
+                <td style="padding:6px; text-align:center;">70s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Lamp</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Lantern, bullseye</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Lantern, hooded</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Rope (50 feet)</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shovel</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Signal whistle</td>
+                <td style="padding:6px; text-align:center;">5c</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Spyglass</td>
+                <td style="padding:6px; text-align:center;">1g</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tent, one-person</td>
+                <td style="padding:6px; text-align:center;">30s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tent, two-person</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tent, four-person</td>
+                <td style="padding:6px; text-align:center;">1g 25s</td>
+                <td style="padding:6px; text-align:center;">3</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tent, ten-person</td>
+                <td style="padding:6px; text-align:center;">2g 50s</td>
+                <td style="padding:6px; text-align:center;">3</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Tinderbox</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Torch</td>
+                <td style="padding:6px; text-align:center;">1s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Waterskin</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="card side-card">
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+            <span>🔍</span>
+            <input type="search" placeholder="To Be Implimented" />
+          </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card side-floating-left">
+            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
+            <ol class="contents-list">
+              <li><a href="#beasts-husbandry">Beasts &amp; Husbandry</a></li>
+              <li><a href="#containers-packs">Containers &amp; Packs</a></li>
+              <li><a href="#cooking-food">Cooking &amp; Food</a></li>
+              <li><a href="#hardware">Hardware</a></li>
+              <li><a href="#outdoors">Outdoors</a></li>
+            </ol>
+
+            <a class="pill"
+               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer">
+              Character Sheet
+            </a>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

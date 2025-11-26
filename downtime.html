@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Downtime - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="files/load.css">
+  <script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN: CONTENT -->
+      <section>
+
+        <!-- 1. DOWNTIME -->
+        <article id="downtime" class="card">
+          <h2>Downtime</h2>
+          <p>
+            Your downtime lets you prepare for the next outing, find new quests, establish
+            a foothold in society, gather information, or just get wasted and wind up in a
+            tavern brawl.
+          </p>
+          <p>
+            These activities generally take a Shift to complete, but other Abilities may
+            allow you to complete them sooner, or more efficiently.
+          </p>
+        </article>
+
+        <!-- 2. CRAFT -->
+        <article id="craft" class="card" style="margin-top: 1rem;">
+          <h2>Craft</h2>
+
+          <p>
+            Characters can use their downtime to make Items. Doing so requires Materials
+            worth at least half the value of the Item and reasonable tools or an
+            environment to make it.
+          </p>
+          <p>
+            Your Craft Difficulty sets the value you can Craft per Shift on the following
+            table. Multiple Shifts of work can be put into making an Item, which don't
+            need to be consecutive.
+          </p>
+
+          <h3>Craft per Activity Value</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Difficulty</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Value</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Difficulty</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">18 – 17</td>
+                <td style="padding:6px;">1s</td>
+                <td style="padding:6px;">10 – 9</td>
+                <td style="padding:6px;">5g</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">16 – 15</td>
+                <td style="padding:6px;">20s</td>
+                <td style="padding:6px;">8 – 7</td>
+                <td style="padding:6px;">7g 50s</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">14 – 13</td>
+                <td style="padding:6px;">50s</td>
+                <td style="padding:6px;">6</td>
+                <td style="padding:6px;">10g</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">12 – 11</td>
+                <td style="padding:6px;">2g 50s</td>
+                <td style="padding:6px;"></td>
+                <td style="padding:6px;"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:0.75rem;">
+            <strong>Scrapping:</strong> An Item can be scrapped for Materials worth half
+            the value of the Item.
+          </p>
+        </article>
+
+        <!-- 3. FORAGING -->
+        <article id="foraging" class="card" style="margin-top: 1rem;">
+          <h2>Foraging</h2>
+
+          <p>
+            Materials from the wilderness in environments that can provide them. You can
+            also do so when you Travel at a
+            <a href="exploration.html#travel">Slow Pace</a>.
+          </p>
+          <p>
+            When you do, make a Survival Check. On a pass, determine if you find Food or
+            Materials:
+          </p>
+          <ul>
+            <li><strong>Food:</strong> d6 Rations</li>
+            <li><strong>Materials:</strong> (d6 × 5s) worth of Materials</li>
+          </ul>
+        </article>
+
+        <!-- 4. HUNTING -->
+        <article id="hunting" class="card" style="margin-top: 1rem;">
+          <h2>Hunting</h2>
+
+          <p>
+            Anything you can harvest meat from gives Rations or Materials. The number of
+            which equals its HP. For Materials, multiply this result by 5 to determine its
+            value in silver. Harvesting can be done as part of a Scene.
+          </p>
+          <p>
+            Looking for Wild Game requires a Shift. When you do, make a Survival Check.
+            On a pass, roll to see what Wild Game you discover. On a Crit, you can choose
+            which Beast you find instead.
+          </p>
+
+          <h3>Wild Game</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">d6</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Beast</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Rations per Beast</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px;">2d6 Wolf</td>
+                <td style="padding:6px;">9</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px;">d6 Fowl (as Hawk)</td>
+                <td style="padding:6px;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">3</td>
+                <td style="padding:6px;">2d6 Vermin (as Rabbit)</td>
+                <td style="padding:6px;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">4</td>
+                <td style="padding:6px;">d6 Deer</td>
+                <td style="padding:6px;">4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">5</td>
+                <td style="padding:6px;">d6 Boar</td>
+                <td style="padding:6px;">13</td>
+              </tr>
+              <tr>
+                <td style="padding:6px; text-align:center;">6</td>
+                <td style="padding:6px;">d4 Cattle</td>
+                <td style="padding:6px;">18</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 5. STUDY -->
+        <article id="study" class="card" style="margin-top: 1rem;">
+          <h2>Study</h2>
+
+          <p>
+            If you Study, you gain a Studied die which you can spend to gain Favor on a
+            d20 roll you make in the next day. You must do so before the d20 roll
+            resolves. You lose any unspent Studied dice after a day.
+          </p>
+          <p>
+            Additionally, you can change a choice offered by one of your Class Features
+            when you Study (such as a Spell Known).
+          </p>
+        </article>
+
+      </section>
+
+      <!-- RIGHT COLUMN: QUICK INDEX -->
+      <aside>
+        <div class="card side-card"> 
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+            <span>🔍</span>
+            <input type="search" placeholder="To Be Implimented" />
+          </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card side-floating-left">
+            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
+            <ol class="contents-list">
+              <li><a href="#downtime">Downtime</a></li>
+              <li><a href="#craft">Craft</a></li>
+              <li><a href="#foraging">Foraging</a></li>
+              <li><a href="#hunting">Hunting</a></li>
+              <li><a href="#study">Study</a></li>
+            </ol>
+
+            <a class="pill"
+               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer">
+              Character Sheet
+            </a>
+          </div>
+
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

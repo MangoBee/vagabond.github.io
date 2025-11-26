@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Armory - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="files/load.css">
+  <script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+    </header>
+
+    <main>
+      <section>
+        <!-- 1. ARMOR -->
+        <article id="armor" class="card">
+          <h2>Armor</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem; text-align:center;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Type</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Rating</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Value</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Slots</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Might</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Light</td>
+                <td style="padding:6px;">1</td>
+                <td style="padding:6px;">50s</td>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">3</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Medium</td>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">1g</td>
+                <td style="padding:6px;">2</td>
+                <td style="padding:6px;">4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Heavy</td>
+                <td style="padding:6px;">3</td>
+                <td style="padding:6px;">2g</td>
+                <td style="padding:6px;">3</td>
+                <td style="padding:6px;">5</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:0.75rem;">
+            Armor grants you its Armor Rating if yours was previously lower. If your Might is not at least equal to the score shown, you are Restrained by wearing it.
+          </p>
+          <p>
+            <strong>Light:</strong> Leather, hide, padded.<br>
+            <strong>Medium:</strong> Chain, scale.<br>
+            <strong>Heavy:</strong> Plate, splint.
+          </p>
+          <h3>Equipping Armor</h3>
+          <p>
+            Equipping or unequipping Armor requires a Scene (10 minutes) to complete.
+          </p>
+        </article>
+
+        <!-- 2. WEAPONS -->
+        <article id="weapons" class="card" style="margin-top: 1rem;">
+          <h2>Weapons</h2>
+          <p>
+            Attacks are made with equipped weapons. Changing weapons requires either an Action or skipping your Move. Weapons have the following characteristics:
+          </p>
+          <ul>
+            <li><strong>Properties:</strong> Change or restrict attacks.</li>
+            <li><strong>Range:</strong> Its maximum Distance to attack.</li>
+            <li><strong>Grip:</strong> How the Weapon is held to attack.</li>
+          </ul>
+
+          <h3>Weapon Properties</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Property</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Brawl</td>
+                <td style="padding:6px;">Attacks with Brawl, can Grapple/Shove.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Brutal</td>
+                <td style="padding:6px;">Crits deal 1 extra damage die.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cleave</td>
+                <td style="padding:6px;">Can deal half damage to two Targets.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Entangle</td>
+                <td style="padding:6px;">Can Grapple.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Finesse</td>
+                <td style="padding:6px;">Can attack with Finesse.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Keen</td>
+                <td style="padding:6px;">Crit on Attack Checks 1 lower.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Long</td>
+                <td style="padding:6px;">Its Range is 5 feet further.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Near</td>
+                <td style="padding:6px;">Can only Target up to Near.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Ranged</td>
+                <td style="padding:6px;">
+                  Attacks with Ranged. Attacking a Close Target Hinders the Check.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shield</td>
+                <td style="padding:6px;">
+                  Ignores Hinder from Blocking Ranged Attacks. Can Shove.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Thrown</td>
+                <td style="padding:6px;">
+                  Can throw attack up to Near, or Far with Hinder.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top:1rem;">Grip</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Grip</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">1H</td>
+                <td style="padding:6px;">One-Handed: Requires one hand.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">2H</td>
+                <td style="padding:6px;">Two-Handed: Requires two hands.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">F</td>
+                <td style="padding:6px;">Fist: Your hands are open while using it.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">V</td>
+                <td style="padding:6px;">
+                  Versatile: Counts as 1H, but its damage die is one size larger if 2H.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Dual-Wielding</h3>
+          <p>
+            While you have two weapons equipped, you can skip your Move to make an attack with the off-hand Weapon.
+          </p>
+
+          <h3>Crude Weapons</h3>
+          <p>
+            If attacking with an Item that isn't a conventional weapon, use the stats for a comparable weapon (such as a chair leg club, or a curtain rod staff). These attacks have a -1 penalty to damage and can use Craft for the Attack Check.
+          </p>
+
+          <h3>Ammunition</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem; text-align:center;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Ammunition</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Slots</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Single</td>
+                <td style="padding:6px;">5c</td>
+                <td style="padding:6px;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Container</td>
+                <td style="padding:6px;">10s</td>
+                <td style="padding:6px;">1</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top:0.75rem;">
+            You don't track every piece of mundane ammunition. As long as you have a container (quiver, box, etc.) handy, you are assumed to have ammunition.
+          </p>
+
+          <h3>Metals</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Metal</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Mult.</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Adamant</td>
+                <td style="padding:6px; text-align:center;">×50</td>
+                <td style="padding:6px;">
+                  Occupies +1 Slot. +1 to Armor (if Armor) or Weapon damage.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cold Iron</td>
+                <td style="padding:6px; text-align:center;">×20</td>
+                <td style="padding:6px;">Situational weakness (Fae).</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Silver</td>
+                <td style="padding:6px; text-align:center;">×10</td>
+                <td style="padding:6px;">Blesses weapons against the accursed.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Mythral</td>
+                <td style="padding:6px; text-align:center;">×50</td>
+                <td style="padding:6px;">Occupies 1 fewer Slot (min 1).</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Orichalcum</td>
+                <td style="padding:6px; text-align:center;">×50</td>
+                <td style="padding:6px;">Armor reduces Cast damage.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top:0.75rem;">
+            Most Weapons and Armor are made of iron, steel, or bronze, but can be made of other metals. Purchasing these versions multiplies the base cost of it by the Multiplier.
+          </p>
+        </article>
+
+        <!-- 3. WEAPONS TABLE -->
+        <article id="weapons-table" class="card" style="margin-top: 1rem;">
+          <h2>Weapons Table</h2>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Weapon</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:left;">Properties</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Range</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Grip</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Value</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Slots</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px; text-align:center;">Damage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Arbalest</td>
+                <td style="padding:6px;">Brutal, Ranged</td>
+                <td style="padding:6px; text-align:center;">Far</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">1g 60s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Battleaxe</td>
+                <td style="padding:6px;">Cleave</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">V</td>
+                <td style="padding:6px; text-align:center;">70s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Bottle, glass</td>
+                <td style="padding:6px;">Finesse, Thrown</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Buckler</td>
+                <td style="padding:6px;">Finesse, Shield</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">50s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Caestus</td>
+                <td style="padding:6px;">Brawl</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">F</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Club</td>
+                <td style="padding:6px;">—</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">2s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Crossbow</td>
+                <td style="padding:6px;">Ranged</td>
+                <td style="padding:6px; text-align:center;">Far</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">80s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Crossbow, light</td>
+                <td style="padding:6px;">Ranged</td>
+                <td style="padding:6px; text-align:center;">Far</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">40s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Dagger</td>
+                <td style="padding:6px;">Finesse, Keen, Thrown</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Flail</td>
+                <td style="padding:6px;">Brutal</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Garotte wire</td>
+                <td style="padding:6px;">Entangle, Finesse</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">—</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Gauntlet</td>
+                <td style="padding:6px;">Brawl</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">F</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Greataxe</td>
+                <td style="padding:6px;">Brutal, Cleave</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">1g 40s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d10</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Greatclub</td>
+                <td style="padding:6px;">—</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">30s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Greatshield</td>
+                <td style="padding:6px;">Shield</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">1g 50s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Greatsword</td>
+                <td style="padding:6px;">Cleave, Keen</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">80s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d10</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Handaxe</td>
+                <td style="padding:6px;">Thrown</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">40s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Handgun</td>
+                <td style="padding:6px;">Ranged</td>
+                <td style="padding:6px; text-align:center;">Far</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">40s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Javelin</td>
+                <td style="padding:6px;">Thrown</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Katar</td>
+                <td style="padding:6px;">Brawl, Finesse, Keen</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">F</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Lance</td>
+                <td style="padding:6px;">Keen, Long</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">1g 80s</td>
+                <td style="padding:6px; text-align:center;">3</td>
+                <td style="padding:6px; text-align:center;">d10</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Light hammer</td>
+                <td style="padding:6px;">Brutal, Thrown</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Longbow</td>
+                <td style="padding:6px;">Keen, Ranged</td>
+                <td style="padding:6px; text-align:center;">Far</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">80s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Longsword</td>
+                <td style="padding:6px;">Keen</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">V</td>
+                <td style="padding:6px; text-align:center;">40s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Lucerne</td>
+                <td style="padding:6px;">Brutal, Long</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">90s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Mace</td>
+                <td style="padding:6px;">—</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">40s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Morningstar</td>
+                <td style="padding:6px;">—</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">V</td>
+                <td style="padding:6px; text-align:center;">80s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Net</td>
+                <td style="padding:6px;">Entangle, Thrown</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">—</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Pike</td>
+                <td style="padding:6px;">Keen, Long</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">1g 80s</td>
+                <td style="padding:6px; text-align:center;">3</td>
+                <td style="padding:6px; text-align:center;">d10</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Poleblade</td>
+                <td style="padding:6px;">Cleave, Long</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">90s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Rifle</td>
+                <td style="padding:6px;">Keen, Ranged</td>
+                <td style="padding:6px; text-align:center;">Far</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">2g 20s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shotgun</td>
+                <td style="padding:6px;">Brutal, Near, Ranged</td>
+                <td style="padding:6px; text-align:center;">Near</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">1g 60s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d10</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shotgun, sawed-off</td>
+                <td style="padding:6px;">Brutal, Near, Ranged</td>
+                <td style="padding:6px; text-align:center;">Near</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">1g 60s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Sling</td>
+                <td style="padding:6px;">Ranged</td>
+                <td style="padding:6px; text-align:center;">Far</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">5s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Spear</td>
+                <td style="padding:6px;">Near, Thrown</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Staff</td>
+                <td style="padding:6px;">Finesse</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">V</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Standard shield</td>
+                <td style="padding:6px;">Shield</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">75s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shortbow</td>
+                <td style="padding:6px;">Finesse, Keen, Ranged</td>
+                <td style="padding:6px; text-align:center;">Far</td>
+                <td style="padding:6px; text-align:center;">2H</td>
+                <td style="padding:6px; text-align:center;">40s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shortsword</td>
+                <td style="padding:6px;">Finesse, Keen</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">20s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Unarmed</td>
+                <td style="padding:6px;">Brawl, Finesse</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">F</td>
+                <td style="padding:6px; text-align:center;">—</td>
+                <td style="padding:6px; text-align:center;">—</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Warhammer</td>
+                <td style="padding:6px;">Brutal</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">V</td>
+                <td style="padding:6px; text-align:center;">80s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d8</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Whip, chain</td>
+                <td style="padding:6px;">Brutal, Entangle, Long</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">40s</td>
+                <td style="padding:6px; text-align:center;">2</td>
+                <td style="padding:6px; text-align:center;">d6</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Whip, leather</td>
+                <td style="padding:6px;">Entangle, Finesse, Long</td>
+                <td style="padding:6px; text-align:center;">Close</td>
+                <td style="padding:6px; text-align:center;">1H</td>
+                <td style="padding:6px; text-align:center;">10s</td>
+                <td style="padding:6px; text-align:center;">1</td>
+                <td style="padding:6px; text-align:center;">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="card side-card">
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+            <span>🔍</span>
+            <input type="search" placeholder="To Be Implimented" />
+          </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card side-floating-left">
+            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
+            <ol class="contents-list">
+              <li><a href="#armor">Armor</a></li>
+              <li><a href="#weapons">Weapons</a></li>
+              <li><a href="#weapons-table">Weapons Table</a></li>
+            </ol>
+
+            <a class="pill"
+               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer">
+              Character Sheet
+            </a>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

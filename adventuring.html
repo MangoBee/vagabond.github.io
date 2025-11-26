@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adventuring - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="files/load.css">
+  <script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN: CONTENT -->
+      <section>
+
+        <!-- 1. ADVENTURING -->
+        <article id="adventuring" class="card">
+          <h2>Adventuring</h2>
+          <p>
+            The Encounter, Exploration, and Downtime will all mention the
+            following rules.
+          </p>
+        </article>
+
+        <!-- 2. TARGETING -->
+        <article id="targeting" class="card" style="margin-top: 1rem;">
+          <h2>Targeting</h2>
+
+          <p>
+            Anything subjected to an effect is a <strong>Target</strong>. In order to be
+            a viable Target, it must be within the Scene and must be perceivable.
+          </p>
+
+          <h3>Distance</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Distance</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Measurement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Close</td>
+                <td style="padding:6px;">Within 5 feet of you.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Near</td>
+                <td style="padding:6px;">Between 5 to 30 feet from you.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Far</td>
+                <td style="padding:6px;">Beyond 30 feet away from you.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:0.75rem;">
+            Distance terms are used to quickly determine how far an effect can choose a
+            viable Target.
+          </p>
+        </article>
+
+        <!-- 3. VISION -->
+        <article id="vision" class="card" style="margin-top: 1rem;">
+          <h2>Vision</h2>
+
+          <p>
+            Darkness causes those without a Sense capable of otherwise seeing to act as
+            <a href="#statuses">Blinded</a>.
+          </p>
+
+          <h3>Senses</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Sense</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Allsight</td>
+                <td style="padding:6px;">Isn't fooled by illusions or invisibility.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Blindsight</td>
+                <td style="padding:6px;">It can see even if it is Blinded.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Darksight</td>
+                <td style="padding:6px;">It can see in darkness.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Echolocation</td>
+                <td style="padding:6px;">It can see by hearing.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Seismicsense</td>
+                <td style="padding:6px;">
+                  It can see anything touching ground it is touching.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Telepathy</td>
+                <td style="padding:6px;">
+                  It can see anything that can think.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 4. TIME -->
+        <article id="time" class="card" style="margin-top: 1rem;">
+          <h2>Time</h2>
+
+          <p>The following terms are used for in-game time:</p>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Term</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Approx. Time</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Example Task</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Round</td>
+                <td style="padding:6px;">10 seconds</td>
+                <td style="padding:6px;">Move and take an Action.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Minute</td>
+                <td style="padding:6px;">6 Rounds</td>
+                <td style="padding:6px;">Fight, pick a lock.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Scene</td>
+                <td style="padding:6px;">10 minutes</td>
+                <td style="padding:6px;">Search a room, a Breather.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Hour</td>
+                <td style="padding:6px;">6 Scenes</td>
+                <td style="padding:6px;">Burn out a torch, research.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shift</td>
+                <td style="padding:6px;">6 hours</td>
+                <td style="padding:6px;">Travel, Rest.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Day</td>
+                <td style="padding:6px;">4 Shifts</td>
+                <td style="padding:6px;">Recover from Fatigue.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top:1rem;">Focusing</h3>
+          <p>
+            Focusing lets some effects stay active over time. Your Focus on an effect
+            ends early if you drop it or Focus on another effect. If the effect is a
+            <a href="magic.html#casting-spells">Spell</a>, other rules apply.
+          </p>
+        </article>
+
+        <!-- 5. MOVEMENT -->
+        <article id="movement" class="card" style="margin-top: 1rem;">
+          <h2>Movement</h2>
+
+          <p>
+            Speed indicates how far something can Move on its Turn during Combat by
+            walking. When using a battlemat for Combat, each square equals 5 feet
+            (2 meters). Heroes will have Encounter, Crawl, and Travel Speeds, detailed
+            in the following Chapters.
+          </p>
+
+          <h3>Falling</h3>
+          <p>
+            Falling onto a hard surface deals 1d6 per 10 feet fallen, to a maximum of
+            20d6 at 200 feet, landing Prone if the damage is taken.
+          </p>
+
+          <h3>Difficult Terrain</h3>
+          <p>
+            A Being spends 2 feet to Move 1 foot in Difficult Terrain. Some examples include:
+          </p>
+          <ul>
+            <li>Climbable walls and squeezing in tight spots.</li>
+            <li>Moving in liquid deeper than half your height.</li>
+            <li>Dense vegetation, rubble, and spiked rocks.</li>
+          </ul>
+
+          <h3>Speed Types</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Speed Type</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Climb</td>
+                <td style="padding:6px;">
+                  Moves at full Speed while climbing. Beings without it are
+                  <a href="#statuses">Vulnerable</a> while climbing.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cling</td>
+                <td style="padding:6px;">
+                  As Climb, but it can also Move on ceilings.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Fly</td>
+                <td style="padding:6px;">
+                  Can Move through the air at full Speed.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Phase</td>
+                <td style="padding:6px;">
+                  Can Move in occupied space, but is forced out to the nearest open space
+                  and takes 5 damage if it ends its Turn in occupied space.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Swim</td>
+                <td style="padding:6px;">
+                  Moves at full Speed while swimming. Beings without it are
+                  <a href="#statuses">Vulnerable</a> while in liquid deeper than half their
+                  height.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top:1rem;">Riding Mounts</h3>
+          <p>
+            A Being can be Mounted if it is willing and the rider is at least one size
+            smaller than them. Mounts are controlled by the rider.
+          </p>
+
+          <h4>Riding Animals &amp; Land Transport</h4>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Beast / Item</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Travel Speed (mi/Shift)</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Cost</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Capacity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Camel</td>
+                <td style="padding:6px;">10 mi</td>
+                <td style="padding:6px;">10g</td>
+                <td style="padding:6px;">12 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Elephant</td>
+                <td style="padding:6px;">8 mi</td>
+                <td style="padding:6px;">20g</td>
+                <td style="padding:6px;">96 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Horse, draft</td>
+                <td style="padding:6px;">6 mi</td>
+                <td style="padding:6px;">4g</td>
+                <td style="padding:6px;">14 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Horse, pony</td>
+                <td style="padding:6px;">6 mi</td>
+                <td style="padding:6px;">3g 50s</td>
+                <td style="padding:6px;">10 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Horse, riding</td>
+                <td style="padding:6px;">16 mi</td>
+                <td style="padding:6px;">7g 50s</td>
+                <td style="padding:6px;">12 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Horse, war</td>
+                <td style="padding:6px;">8 mi</td>
+                <td style="padding:6px;">25g</td>
+                <td style="padding:6px;">16 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Mule</td>
+                <td style="padding:6px;">6 mi</td>
+                <td style="padding:6px;">3g</td>
+                <td style="padding:6px;">11 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Cart</td>
+                <td style="padding:6px;">—</td>
+                <td style="padding:6px;">5g</td>
+                <td style="padding:6px;">50 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Saddle &amp; tack</td>
+                <td style="padding:6px;">—</td>
+                <td style="padding:6px;">2g 50s</td>
+                <td style="padding:6px;">+5 Slots</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Wagon</td>
+                <td style="padding:6px;">—</td>
+                <td style="padding:6px;">15g</td>
+                <td style="padding:6px;">150 Slots</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 6. POSITION -->
+        <article id="position" class="card" style="margin-top: 1rem;">
+          <h2>Position</h2>
+
+          <p>
+            Size describes the space something occupies. A Being can’t Move through a
+            Foe’s space without special Abilities unless allowed or if it is at least two
+            sizes larger than the Foe.
+          </p>
+
+          <h3>Size</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Size</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Height</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Occupies...</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Small</td>
+                <td style="padding:6px;">&lt; 3 ft</td>
+                <td style="padding:6px;">1 unit*</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Medium</td>
+                <td style="padding:6px;">3 – 10 ft</td>
+                <td style="padding:6px;">1 unit</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Large</td>
+                <td style="padding:6px;">11 – 20 ft</td>
+                <td style="padding:6px;">1 – 4 units</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Huge</td>
+                <td style="padding:6px;">21 – 40 ft</td>
+                <td style="padding:6px;">5 – 9 units</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Giant</td>
+                <td style="padding:6px;">41 – 60 ft</td>
+                <td style="padding:6px;">10 – 16 units</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Colossal</td>
+                <td style="padding:6px;">&gt; 60 ft</td>
+                <td style="padding:6px;">17+ units</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top:0.5rem;">
+            * Occupies this space, but doesn’t prevent movement.
+          </p>
+
+          <h3>Flanking</h3>
+          <p>
+            If at least two Allied Beings are Close to a Foe, the Foe is
+            <a href="#statuses">Vulnerable</a> if it is no more than one size larger than
+            the Allies.
+          </p>
+
+          <h3>Grappling</h3>
+          <p>
+            Physically causing a Target to be Restrained by using your body is
+            <strong>Grappling</strong>. A Being that is physically restraining a Target
+            has its Speed halved, unless the Target is smaller. The methods for resolving
+            this differ for Heroes and Enemies:
+          </p>
+
+          <h4>Beginning a Grapple</h4>
+          <p>
+            <strong>Heroes:</strong> Attack Action and passed Brawl Check to begin the
+            <a href="skills.html#might">Grapple</a>.
+          </p>
+          <p>
+            <strong>Enemies:</strong> Those that employ grappling will do so as a Melee
+            Attack that Restrains, forcing the Hero to
+            <a href="encounters.html#combat">defend</a>.
+          </p>
+
+          <h4>Ending a Grapple</h4>
+          <p>
+            <strong>Heroes:</strong> Action to try to end the Restrained Status as an
+            Endure or Reflex Save, doing so on a pass and regaining half their Speed.
+          </p>
+          <p>
+            <strong>Enemies:</strong> It can use its Action to try and end the Restrained
+            Status, forcing the Hero to make a Brawl Check to maintain it. On a fail, the
+            Restrained Status ends and the Being regains half their Speed.
+          </p>
+        </article>
+
+        <!-- 7. REST -->
+        <article id="rest" class="card" style="margin-top: 1rem;">
+          <h2>Rest</h2>
+
+          <p>
+            Rests require a Shift of light to no activity. You gain the benefits of the
+            Rest if you are fed and rested, which restores your HP, Luck, and Mana to max.
+            If your HP is already at max, the Rest instead removes 1 Fatigue.
+          </p>
+
+          <h3>Lodging Expenses</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Quality</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Cost / Day</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Quality</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Cost / Day</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Horrible</td>
+                <td style="padding:6px;">1s</td>
+                <td style="padding:6px;">Comfortable</td>
+                <td style="padding:6px;">20s</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Poor</td>
+                <td style="padding:6px;">2s</td>
+                <td style="padding:6px;">Luxury</td>
+                <td style="padding:6px;">40s</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Modest</td>
+                <td style="padding:6px;">10s</td>
+                <td style="padding:6px;">Opulent</td>
+                <td style="padding:6px;">1g</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top:1rem;">Breather</h3>
+          <p>
+            Once per Shift, you can eat a Ration and drink some water to regain HP equal
+            to your Might.
+          </p>
+        </article>
+
+        <!-- 8. TEMPERATURE -->
+        <article id="temperature" class="card" style="margin-top: 1rem;">
+          <h2>Temperature</h2>
+
+          <p>
+            Each Shift a Being spends in Bitter Cold or Sweltering Heat will require an
+            Endure Save. On a fail, it gains 1 Fatigue.
+          </p>
+          <p>
+            Beings that are Immune to Cold damage automatically pass this Save in Bitter
+            Cold. Similarly, Beings Immune to Fire damage automatically pass this Save in
+            Sweltering Heat.
+          </p>
+
+          <h3>Extreme Temperatures</h3>
+          <p>
+            Extreme environments may shorten the time for which these Saves are made.
+            For example, moving through the inside of a volcano could call for the Check
+            against Sweltering Heat every Hour or Scene, and being in a plane of
+            elemental fire might call for it every Round.
+          </p>
+        </article>
+
+        <!-- 9. DAMAGING OBJECTS -->
+        <article id="damaging-objects" class="card" style="margin-top: 1rem;">
+          <h2>Damaging Objects</h2>
+
+          <p>
+            Attacks against Objects that aren't Equipped are assumed to hit. The material
+            an Object is made of determines Armor, and its HP is equal to its Size. You
+            can assume flammable materials are Weak to Fire, stone is Weak to Blunt, etc.
+          </p>
+
+          <h3>Object Armor &amp; HP</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Material</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Armor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Fragile: Cloth, paper, crystal, glass</td>
+                <td style="padding:6px;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Light: Hide, leather, wood</td>
+                <td style="padding:6px;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Medium: Bone, chain, stone, wood</td>
+                <td style="padding:6px;">2</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Heavy: Metal</td>
+                <td style="padding:6px;">3</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Dense: (+1) metal</td>
+                <td style="padding:6px;">4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Titanic: (+2) metal</td>
+                <td style="padding:6px;">5</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Near-Indestructible: (+3) metal</td>
+                <td style="padding:6px;">6</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:1rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Size</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">HP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Small</td>
+                <td style="padding:6px;">1</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Medium</td>
+                <td style="padding:6px;">4</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Large</td>
+                <td style="padding:6px;">16</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Huge</td>
+                <td style="padding:6px;">50</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Giant</td>
+                <td style="padding:6px;">200</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Colossal</td>
+                <td style="padding:6px;">1000</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 10. STATUSES -->
+        <article id="statuses" class="card" style="margin-top: 1rem;">
+          <h2>Statuses</h2>
+
+          <p>
+            Statuses may occur as a result of magic, Features, attacks, or other effects.
+          </p>
+
+          <h3>Berserk</h3>
+          <p>
+            It can't Focus, and it can only Attack, Move, and Rush. It doesn't make
+            Morale Checks, and it can't be Frightened.
+          </p>
+
+          <h3>Blinded</h3>
+          <p>
+            It can’t see and is <strong>Vulnerable</strong>.
+          </p>
+
+          <h3>Burning</h3>
+          <p>
+            A die roll indicates damage it takes at the start of its Turns, unless an
+            appropriate action is taken to end it (such as dousing fire).
+          </p>
+
+          <h3>Charmed</h3>
+          <p>
+            It can't willingly attack the charmer.
+          </p>
+
+          <h3>Confused</h3>
+          <p>
+            Its Checks and Saves have Hinder, and Saves against its Actions have Favor.
+          </p>
+
+          <h3>Dazed</h3>
+          <p>
+            It can't Focus or Move unless it uses an Action to do so.
+          </p>
+
+          <h3>Fatigued</h3>
+          <p>
+            Fatigue is measured from 0 to 5. With 1 or more Fatigue, the following rules apply:
+          </p>
+          <ul>
+            <li>Each Fatigue occupies an Item Slot.</li>
+            <li>At 3 or more Fatigue, it can't Rush.</li>
+            <li>At 5 Fatigue, it dies.</li>
+          </ul>
+
+          <h3>Frightened</h3>
+          <p>
+            It has a -2 penalty to damage it deals.
+          </p>
+
+          <h3>Incapacitated</h3>
+          <p>The following rules apply:</p>
+          <ul>
+            <li>It can’t Focus or use its Actions or Move.</li>
+            <li>It fails all Might and Dexterity Checks.</li>
+            <li>It is <strong>Vulnerable</strong>.</li>
+          </ul>
+
+          <h3>Invisible</h3>
+          <p>
+            It can’t be seen by normal senses and those that can’t see it act as
+            <a href="#vision">Blinded</a> for Checks and Saves involving it.
+          </p>
+
+          <h3>Paralyzed</h3>
+          <p>
+            It is Incapacitated and its Speed is 0.
+          </p>
+
+          <h3>Prone</h3>
+          <p>
+            You can either drop or stand from Prone by using 10 feet of Speed. While Prone,
+            the following rules apply:
+          </p>
+          <ul>
+            <li>
+              It can only Move by crawling (2 feet of Speed for 1 foot of movement) and
+              it can't Rush.
+            </li>
+            <li>
+              It is <strong>Vulnerable</strong> for the purposes of Melee Attacks and
+              Dodge Checks.
+            </li>
+          </ul>
+
+          <h3>Restrained</h3>
+          <p>
+            It is <strong>Vulnerable</strong>, and its Speed is 0.
+          </p>
+
+          <h3>Sickened</h3>
+          <p>The following rules apply:</p>
+          <ul>
+            <li>It has a -2 penalty to any healing it receives.</li>
+            <li>
+              Additional effects may be indicated in parenthesis, which apply while it is
+              Sickened.
+            </li>
+          </ul>
+
+          <h3>Suffocating</h3>
+          <p>
+            Beings that aren't Immune to Suffocating begin doing so after not breathing
+            for 1 Minute.
+          </p>
+          <p><strong>Heroes:</strong> Each Round while Suffocating, roll a d8. If the result is equal to or greater than their Might, they gain 1 Fatigue.</p>
+          <p><strong>Enemies:</strong> Each Round while Suffocating, they gain 1 Fatigue.</p>
+
+          <h3>Unconscious</h3>
+          <p>The following rules apply:</p>
+          <ul>
+            <li>It is Blinded, Incapacitated, and Prone.</li>
+            <li>Close Attacks Targeting it always Crit.</li>
+          </ul>
+
+          <h3>Vulnerable</h3>
+          <p>
+            Its Attack Checks, and Saves against Attacks have Hinder. Attacks against it
+            have Favor.
+          </p>
+        </article>
+
+      </section>
+
+      <!-- RIGHT COLUMN: QUICK INDEX -->
+      <aside>
+       <div class="card side-card">
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card side-floating-left">
+            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
+            <ol class="contents-list">
+              <li><a href="#adventuring">Adventuring</a></li>
+              <li><a href="#targeting">Targeting</a></li>
+              <li><a href="#vision">Vision</a></li>
+              <li><a href="#time">Time</a></li>
+              <li><a href="#movement">Movement</a></li>
+              <li><a href="#position">Position</a></li>
+              <li><a href="#rest">Rest</a></li>
+              <li><a href="#temperature">Temperature</a></li>
+              <li><a href="#damaging-objects">Damaging Objects</a></li>
+              <li><a href="#statuses">Statuses</a></li>
+            </ol>
+
+            <a class="pill"
+               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer">
+              Character Sheet
+            </a>
+          </div>
+
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gunslinger - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="files/load.css">
+  <script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+    </header>
+
+    <main>
+      <section>
+        <!-- 1. GUNSLINGER -->
+        <article id="gunslinger" class="card">
+          <h2>Gunslinger</h2>
+          <p>
+            <em>“This, is my BOOMSTICK!”</em><br>
+            – Ash, <em>Army of Darkness</em>
+          </p>
+
+          <p>
+            Attitude and tenacity are as core to the gunslinger as ammo. They stare down
+            challenges through iron sights, fortified by their inner grit.
+          </p>
+
+          <h3>Iconic Gunslingers</h3>
+          <ul>
+            <li>Arthur Morgan, <em>Red Dead Redemption 2</em></li>
+            <li>Django, <em>Django Unchained</em></li>
+            <li>Roland Deschain, <em>Dark Tower</em></li>
+          </ul>
+
+          <h3>Playing Gunslinger</h3>
+          <p>
+            The gunslinger is a low defense, high-crit striker. In combat, stay as far back
+            as possible and keep the enemy under constant fire.
+          </p>
+          <ul>
+            <li><strong>Action:</strong> Attack</li>
+            <li><strong>Move:</strong> Backline</li>
+            <li><strong>Starting Pack:</strong> Bounty Hunter or Tinker</li>
+            <li><strong>Key Stat:</strong> Awareness</li>
+            <li><strong>Complexity:</strong> ★★★✰✰</li>
+          </ul>
+
+          <h3>Training</h3>
+          <ul>
+            <li><strong>Weapons:</strong> Ranged</li>
+            <li>
+              <strong>Skills:</strong> Detect, and 3 from either Brawl, Finesse, Influence,
+              Sneak, or Survival
+            </li>
+          </ul>
+        </article>
+
+        <!-- 2. CLASS FEATURES TABLE -->
+        <article id="class-features-table" class="card" style="margin-top: 1rem;">
+          <h2>Class Features Table</h2>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Level</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Features</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:6px;">1st</td><td style="padding:6px;">Quick Draw, Deadeye</td></tr>
+              <tr><td style="padding:6px;">2nd</td><td style="padding:6px;">Skeet Shooter</td></tr>
+              <tr><td style="padding:6px;">3rd</td><td style="padding:6px;">Perk</td></tr>
+              <tr><td style="padding:6px;">4th</td><td style="padding:6px;">Grit</td></tr>
+              <tr><td style="padding:6px;">5th</td><td style="padding:6px;">Perk</td></tr>
+              <tr><td style="padding:6px;">6th</td><td style="padding:6px;">Devastator</td></tr>
+              <tr><td style="padding:6px;">7th</td><td style="padding:6px;">Perk</td></tr>
+              <tr><td style="padding:6px;">8th</td><td style="padding:6px;">Bad Medicine</td></tr>
+              <tr><td style="padding:6px;">9th</td><td style="padding:6px;">Perk</td></tr>
+              <tr><td style="padding:6px;">10th</td><td style="padding:6px;">High Noon</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 3. CLASS FEATURES -->
+        <article id="class-features" class="card" style="margin-top: 1rem;">
+          <h2>Class Features</h2>
+
+          <h3>Quick Draw</h3>
+          <p><strong>Gunslinger: 1st Level</strong></p>
+          <p>
+            You gain the <a href="perks.html#perks-i-n">Marksmanship</a> Perk. Further,
+            when combat occurs, you can make one attack before the first Turn.
+          </p>
+
+          <h3>Deadeye</h3>
+          <p><strong>Gunslinger: 1st Level</strong></p>
+          <p>
+            After you pass a Ranged Check, you Crit on subsequent Ranged attacks on a d20
+            roll 1 lower, but no lower than 17. This resets to 0 at the end of your Turn
+            if you didn't pass a Ranged Check since your last Turn.
+          </p>
+
+          <h3>Skeet Shooter</h3>
+          <p><strong>Gunslinger: 2nd Level</strong></p>
+          <p>
+            Once per Round, you can make a Ranged attack on an Off-Turn to Target a
+            projectile from an attack you can see. If you pass, reduce the damage of the
+            triggering attack by the damage you would deal with your attack. The projectile
+            falls out of the air if reduced to 0.
+          </p>
+
+          <h3>Grit</h3>
+          <p><strong>Gunslinger: 4th Level</strong></p>
+          <p>
+            When you Crit on a Ranged attack, the damage dice can explode.
+          </p>
+
+          <h3>Devastator</h3>
+          <p><strong>Gunslinger: 6th Level</strong></p>
+          <p>
+            When you reduce an Enemy to 0 HP, the roll on the d20 to Crit as per your
+            Deadeye Feature is immediately set to 17.
+          </p>
+
+          <h3>Bad Medicine</h3>
+          <p><strong>Gunslinger: 8th Level</strong></p>
+          <p>
+            You deal an extra die of damage when you Crit with a Ranged Check.
+          </p>
+
+          <h3>High Noon</h3>
+          <p><strong>Gunslinger: 10th Level</strong></p>
+          <p>
+            Once per Turn, if you Crit on a Ranged Check, you can make one additional
+            attack.
+          </p>
+        </article>
+      </section>
+
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="card side-card"> 
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+            <span>🔍</span>
+            <input type="search" placeholder="To Be Implimented" />
+          </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Classes</div>
+              <ul class="link-list">
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card side-floating-left">
+            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
+            <ol class="contents-list">
+              <li><a href="#gunslinger">Gunslinger</a></li>
+              <li><a href="#class-features-table">Class Features Table</a></li>
+              <li><a href="#class-features">Class Features</a></li>
+            </ol>
+
+            <a class="pill"
+               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer">
+              Character Sheet
+            </a>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

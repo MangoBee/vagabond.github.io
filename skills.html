@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stats & Skills - Vagabond</title>
+    <link rel="icon" type="image/x-icon" href="files/cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="files/load.css">
+<script src="preview.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="sticky-block">
+      <div class="logo-block">
+        <div  class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+
+      </div>
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
+      </div>
+      <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+
+
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN: INTRO + CONTENTS -->
+      <section>
+
+		
+
+         <!-- Sticky wrapper that holds the quick-links card -->
+ 
+
+
+<article id="skills-passive" class="card">
+  <h2>Skills &amp; Passives</h2>
+
+  <p>
+    The numbers that determine the results of rolls are known as <strong>Stats</strong>.
+    There are six Stats: <strong>Might, Dexterity, Awareness, Reason, Presence, and Luck</strong>.
+    Each Stat is associated with various <strong>Passives</strong>, <strong>Saves</strong>,
+    <strong>Skills</strong>, and <strong>Weapons</strong>.
+  </p>
+
+ 
+</article>
+
+
+      <article id="might" class="card" style="margin-top: 1rem;">
+  <h2>Might</h2>
+
+  <p>
+    Might is used for <strong>Max HP</strong>, <strong>Inventory Slots</strong>,
+    <strong>Endure Saves</strong>, and both <strong>Brawl</strong> and
+    <strong>Melee</strong> Checks.
+  </p>
+
+  <h3>Max HP (Passive)</h3>
+  <p>
+    Your Maximum Hit Points (Max HP) are equal to your <strong>Might × your Level</strong>.
+    You regain lost HP when you <a href="adventuring.html#rest" target="_blank" rel="noopener noreferrer">Rest</a>, as well as by any additional means in-game.
+  </p>
+
+
+  <h3>Inventory Slots (Passive)</h3>
+  <p>
+    Your total number of Inventory Slots is equal to <strong>(8 + Might)</strong>.
+  </p>
+  <p>
+    You cannot carry any items that would exceed your maximum number of Slots. Coins don't count as Items for the purposes of Item Slots. Loot to your heart's content. 
+    <p>A set of clothing doesn't count against your Slots when worn (Armor isn't considered clothing).</p>
+
+  </p>
+
+  <p>The number of Slots an Item occupies follows these general guidelines:
+<table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+  <thead>
+    <tr>
+      <th style="border-bottom:1px solid var(--border); padding:6px;">Slots</th>
+      <th style="border-bottom:1px solid var(--border); padding:6px;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:6px;">0</td>
+      <td style="padding:6px;">1 to 10 of this only occupies 1 Slot.</td>
+    </tr>
+    <tr>
+      <td style="padding:6px;">1</td>
+      <td style="padding:6px;">It can be carried in one hand.</td>
+    </tr>
+    <tr>
+      <td style="padding:6px;">2</td>
+      <td style="padding:6px;">It requires two hands to carry.</td>
+    </tr>
+    <tr>
+      <td style="padding:6px;">3</td>
+      <td style="padding:6px;">It requires two hands to carry, and is heavy.</td>
+    </tr>
+  </tbody>
+</table>
+
+</p>
+
+  <h3>Melee (Skill)</h3>
+  <p>
+    Used when attacking with <strong>Melee Weapons</strong>.
+  </p>
+
+  <h3>Brawl (Skill)</h3>
+  <p>
+    Used for exerting raw physical force. This includes
+    <strong>Grapples</strong>, <strong>Shoves</strong>, and attacks made with
+    <strong>Brawl Weapons</strong>.
+  </p>
+  <p>
+    <strong>Attack:</strong> Use when attacking with <a href="armory.html#weapons-table" target="_blank" rel="noopener noreferrer">Brawl Weapons</a>.
+  </p>
+  <p>
+    <strong>Grapples and Shoves:</strong> You may attempt to grapple or shove Beings
+    that are your size or smaller.
+  </p>
+
+  <ul>
+    <li><strong>Grapple:</strong> Grappling rules appear on <a href="adventuring.html#grappling" target="_blank" rel="noopener noreferrer">Adventuring</a>.</li>
+    <li><strong>Shove:</strong> On a pass, you shove the target 5 feet or knock it <strong>Prone</strong>.
+      You must have a <strong>Brawl</strong> or <strong>Shield Weapon</strong> equipped.</li>
+  </ul>
+
+ 
+</article>
+
+<article id="dexterity" class="card" style="margin-top: 1rem;">
+  <h2>Dexterity</h2>
+
+  <p>
+    Dexterity determines your <strong>Speed</strong> and is used for
+    <strong>Reflex</strong>, <strong>Finesse</strong>, and <strong>Sneak</strong> Checks.
+  </p>
+
+  <!-- SPEED -->
+  <h3>Speed (Passive)</h3>
+  <p>
+    How far you can Move on solid ground. Your Speed refreshes at the start of your Turn.
+  </p>
+
+  <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+    <thead>
+      <tr>
+        <th style="border-bottom:1px solid var(--border); padding:6px;">DEX</th>
+        <th style="border-bottom:1px solid var(--border); padding:6px;">Speed</th>
+        <th style="border-bottom:1px solid var(--border); padding:6px;">Crawl</th>
+        <th style="border-bottom:1px solid var(--border); padding:6px;">Travel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:6px;">2 – 3</td>
+        <td style="padding:6px;">25’</td>
+        <td style="padding:6px;">75’</td>
+        <td style="padding:6px;">5 mi</td>
+      </tr>
+      <tr>
+        <td style="padding:6px;">4 – 5</td>
+        <td style="padding:6px;">30’</td>
+        <td style="padding:6px;">90’</td>
+        <td style="padding:6px;">6 mi</td>
+      </tr>
+      <tr>
+        <td style="padding:6px;">6 – 7</td>
+        <td style="padding:6px;">35’</td>
+        <td style="padding:6px;">105’</td>
+        <td style="padding:6px;">7 mi</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FINESSE -->
+  <h3>Finesse (Skill)</h3>
+  <p>
+    Coordination and concealing your actions. Also used for thievery and when attacking
+    with <strong>Finesse Weapons</strong>.
+  </p>
+
+  <p>
+    <strong>Attack:</strong> With
+    <a href="armory.html#weapons-table" target="_blank" rel="noopener noreferrer">
+      Finesse Weapons
+    </a>.
+  </p>
+
+  <p>
+    <strong>Pickpocket:</strong> Attempt to steal or plant one unsecured Item of 1 Slot or less.
+  </p>
+
+  <p>
+    <strong>Lockpick:</strong> Check to pick a lock (requires a
+    <a href="exploration.html#lockpicking" target="_blank" rel="noopener noreferrer">
+      Lockpick</a>).
+  </p>
+
+  <!-- SNEAK -->
+  <h3>Sneak (Skill)</h3>
+  <p>
+    Concealing your location.
+  </p>
+
+  <p>
+    <strong>Stealth:</strong> Attempt to sneak up on a Being you are aware of.
+    You cannot do so if you are carrying a torch or any effect that sheds Light.
+  </p>
+
+
+</article>
+
+<article id="awareness" class="card" style="margin-top: 1rem;">
+  <h2>Awareness</h2>
+
+  <p>
+    Awareness is used for <strong>Reflex</strong>, <strong>Detect</strong>,
+    <strong>Mysticism</strong>, and <strong>Survival</strong> Checks, as well as
+    <strong>Ranged Attacks</strong>.
+  </p>
+
+  <!-- DETECT -->
+  <h3>Detect (Skill)</h3>
+  <p>
+    Reflexively sensing others and becoming aware of hidden Beings, objects, or threats.
+  </p>
+
+  <!-- MYSTICISM -->
+  <h3>Mysticism (Skill)</h3>
+  <p>
+    Understanding of the supernatural. Used by <strong>Druids</strong>,
+    <strong>Luminaries</strong>, and <strong>Warlocks</strong> to Cast.
+  </p>
+
+  <!-- SURVIVAL -->
+  <h3>Survival (Skill)</h3>
+  <p>
+    Tracking and understanding beasts, plants, natural hazards, and other aspects of the wild.
+  </p>
+
+  <!-- RANGED -->
+  <h3>Ranged (Skill)</h3>
+  <p>
+    Attacking with <strong>Ranged Weapons</strong>.
+  </p>
+
+</article>
+
+<article id="reason" class="card" style="margin-top: 1rem;">
+  <h2>Reason</h2>
+
+  <p>
+    Reason is used for <strong>Will</strong>, <strong>Arcana</strong>,
+    <strong>Craft</strong>, and <strong>Medicine</strong> Checks.
+  </p>
+
+  <!-- ARCANA -->
+  <h3>Arcana (Skill)</h3>
+  <p>
+    Application and knowledge of magic. Used by <strong>Magus</strong> and
+    <strong>Wizards</strong> to Cast.
+  </p>
+
+  <!-- CRAFT -->
+  <h3>Craft (Skill)</h3>
+  <p>
+    Your ability to appraise and create Items.
+  </p>
+  <p>
+    Difficulty with Craft determines the highest Value of items you can
+    <a href="downtime.html#craft" target="_blank" rel="noopener noreferrer">
+      Craft</a>.
+  </p>
+
+  <!-- MEDICINE -->
+  <h3>Medicine (Skill)</h3>
+  <p>
+    Education in non-magical healing, treatment, and care.
+  </p>
+
+</article>
+
+
+<article id="presence" class="card" style="margin-top: 1rem;">
+  <h2>Presence</h2>
+
+  <p>
+    Presence is used for <strong>Will</strong>, <strong>Influence</strong>,
+    <strong>Leadership</strong>, and <strong>Performance</strong> Checks.
+  </p>
+
+  <!-- INFLUENCE -->
+  <h3>Influence (Skill)</h3>
+  <p>
+    Social ability involving coercion, deception, or negotiation. Used by
+    <strong>Sorcerers</strong> to Cast.
+  </p>
+  <p>
+    <strong>Parley:</strong> Attempt to convince an Enemy to end hostilities.
+  </p>
+
+  <!-- LEADERSHIP -->
+  <h3>Leadership (Skill)</h3>
+  <p>
+    Social motivation, diplomacy, and the ability to inspire loyalty. Used by
+    <strong>Revelators</strong> to Cast.
+  </p>
+  <p>
+    <strong>Command:</strong> Give orders to those who are willing to follow you.
+  </p>
+
+  <!-- PERFORMANCE -->
+  <h3>Performance (Skill)</h3>
+  <p>
+    Cultural talent and the ability to impress, entertain, or inspire awe.
+  </p>
+
+</article>
+
+<article id="luck" class="card" style="margin-top: 1rem;">
+  <h2>Luck</h2>
+
+  <p>
+    Luck allows players to tip the scales of Fate and influence events beyond raw skill.
+  </p>
+
+  <!-- LUCK POOL -->
+  <h3>Luck Pool</h3>
+  <p>
+    You have a pool of Luck points equal to your <strong>Luck Stat</strong>.
+    You regain spent Luck whenever you Rest.
+  </p>
+
+  <p>You may spend <strong>1 Luck</strong> to do any of the following:</p>
+
+  <ul>
+    <li><strong>Advantage:</strong> Grant Favor on a d20 roll.</li>
+    <li><strong>Fluke:</strong> Reroll an unresolved die you rolled.</li>
+    <li><strong>Plot Armor:</strong> Once per Round, if you would be reduced to 0 HP,
+      you may spend 1 Luck to regain <strong>d6 HP</strong>.</li>
+  </ul>
+
+  <!-- MISFORTUNE & CHANCE -->
+  <h3>Misfortune &amp; Chance</h3>
+  <p>
+    When the game needs to determine which Hero is affected by a random effect,
+    the Hero(s) with the <strong>lowest current Luck</strong> is typically chosen.
+  </p>
+
+</article>
+
+<article id="saves" class="card" style="margin-top: 1rem;">
+  <h2>Saves</h2>
+
+  <p>
+    Saves are Checks that represent your instincts and natural defenses against harm.
+    The three Saves are <strong>Endure</strong>, <strong>Reflex</strong>, and
+    <strong>Will</strong>.
+  </p>
+
+  <!-- ENDURE -->
+  <h3>Endure</h3>
+  <p>
+    Withstand physical harm such as poisons, extreme heat, restraints, and petrification.
+  </p>
+  <p><strong>Endure Difficulty = (20 − (MIT × 2))</strong></p>
+
+  <!-- REFLEX -->
+  <h3>Reflex</h3>
+  <p>
+    Evade sudden or physical harm, such as explosions, quick traps, slipping grasp,
+    or dragon’s breath.
+  </p>
+  <p><strong>Reflex Difficulty = (20 − (DEX + AWR))</strong></p>
+
+  <!-- WILL -->
+  <h3>Will</h3>
+  <p>
+    Resist mental or supernatural harm, such as charms, terrors, psychic influence,
+    or threats to your resolve.
+  </p>
+  <p><strong>Will Difficulty = (20 − (RSN + PRS))</strong></p>
+
+</article>
+
+
+       
+      </section>
+
+      
+      <!-- RIGHT COLUMN: QUICK INDEX -->
+       <!-- RIGHT COLUMN: QUICK INDEX -->
+        <!-- RIGHT COLUMN: QUICK INDEX -->
+         <!-- RIGHT COLUMN: QUICK INDEX -->
+      <aside>
+        <div class="card side-card">
+          <h3>Rules Index</h3>
+          <form class="search-box" onsubmit="return false;">
+        <span>🔍</span>
+        <input type="search" placeholder="To Be Implimented" />
+      </form>
+          <p>Jump to the part of the game you need during play.</p>
+
+          <div class="columns">
+
+<div>
+			 <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+				<li><a href="index.html">Main Page</a></li>
+				<li><a href="skills.html">Stats & Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+			
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+
+	
+              </ul>
+            </div>
+			
+
+			<div>
+  <div class="section-title">Classes</div>
+  <ul class="link-list">
+    <li><a href="alchemist.html">Alchemist</a></li>
+    <li><a href="barbarian.html">Barbarian</a></li>
+    <li><a href="bard.html">Bard</a></li>
+    <li><a href="dancer.html">Dancer</a></li>
+    <li><a href="druid.html">Druid</a></li>
+    <li><a href="fighter.html">Fighter</a></li>
+    <li><a href="gunslinger.html">Gunslinger</a></li>
+    
+  </ul>
+</div>
+
+<div>
+  <div class="section-title">Classes</div>
+  <ul class="link-list">
+    <li><a href="hunter.html">Hunter</a></li>
+    <li><a href="illrigger.html">Illrigger</a></li>
+    <li><a href="luminary.html">Luminary</a></li>
+    <li><a href="magus.html">Magus</a></li>
+    <li><a href="merchant.html">Merchant</a></li>
+    <li><a href="pugilist.html">Pugilist</a></li>
+    <li><a href="revelator.html">Revelator</a></li>
+  </ul>
+</div>
+
+<div>
+  <div class="section-title">Classes</div>
+  <ul class="link-list">
+    <li><a href="rogue.html">Rogue</a></li>
+     <li><a href="samurai.html">Samurai</a></li>
+    <li><a href="sanguinist.html">Sanguinist</a></li>
+    <li><a href="sorcerer.html">Sorcerer</a></li>
+    <li><a href="vanguard.html">Vanguard</a></li>
+    <li><a href="warlock.html">Warlock</a></li>
+    <li><a href="wizard.html">Wizard</a></li>
+  </ul>
+</div></div>
+       
+      
+            <div class="card side-floating-left">
+      <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3> 
+      <ol class="contents-list">
+			<li><a href="#skills-passive">Skills & Passives</a></li>
+			<li><a href="#might">Might</a></li>
+            <li><a href="#dexterity">Dexterity</a></li>
+            <li><a href="#awareness">Awareness</a></li>
+			<li><a href="#reason">Reason</a></li>
+			<li><a href="#presence">Presence</a></li>
+			<li><a href="#luck">Luck</a></li>
+			<li><a href="#saves">Saves</a></li>
+          </ol>
+   
+      <a class="pill"
+         href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+         target="_blank"
+         rel="noopener noreferrer">
+        Character Sheet
+      </a>
+    </div>     
+
+
+
+
+
+
+</aside>
+                
+
+  
+ 
+
+
+
+ 
+
+
+ 
+    </main>
+
+   
+  </div>
+
+
+
+
+
+
+  
+</body>
+</html>
