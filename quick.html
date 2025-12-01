@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quick Rules - Vagabond</title>
+  <link rel="icon" type="image/x-icon" href="cart_logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <script src="search.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo-block">
+        <div class="logo-subtitle">Ragged Hollow</div>
+        <a href="index.html" class="logo-title">Vagabond</a>
+      </div>
+
+      <div class="logo-block">
+        <span class="pill">
+          <a href="quick.html" class="logo-title">Quick Rules</a>
+        </span>
+      </div>
+
+      <div id="top" class="tagline">
+        Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder,
+        Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord,
+        and other OSR-style games.
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN: QUICK RULES CONTENT -->
+      <section>
+
+        <!-- CHECKS & FAVOR/HINDER -->
+        <article id="checks" class="card">
+          <h2>Checks</h2>
+
+          <p>
+            To make a Check, roll a d20 and compare it to the Difficulty:
+          </p>
+          <ul>
+            <li><strong>Crit:</strong> d20 shows 20.</li>
+            <li><strong>Pass:</strong> d20 ≥ Difficulty.</li>
+            <li><strong>Fail:</strong> d20 &lt; Difficulty.</li>
+          </ul>
+
+          <p>
+            When you Crit on an <strong>Attack</strong>, <strong>Cast</strong>, or a <strong>Save</strong>:
+          </p>
+          <ul>
+            <li><strong>Attack / Cast:</strong> Deal extra damage equal to the Stat used.</li>
+            <li><strong>Save:</strong> You ignore the effect and can still take an Action.</li>
+          </ul>
+
+          <h3>Favor &amp; Hinder</h3>
+          <p>
+            Circumstances can make a Check easier or harder:
+          </p>
+          <ul>
+            <li><strong>Favored:</strong> Roll d20 + d6 (bonus).</li>
+            <li><strong>Hindered:</strong> Roll d20 − d6 (penalty).</li>
+            <li>Favor and Hinder cancel 1-for-1; you can only be one or the other.</li>
+          </ul>
+        </article>
+
+        <!-- COMBAT BASICS -->
+        <article id="combat" class="card" style="margin-top: 1rem;">
+          <h2>Combat</h2>
+
+          <p>
+            Combat is split into <strong>Rounds</strong> (about 10 seconds), each made of
+            <strong>Turns</strong> for the Groups in the fight. Every Being belongs to a Group
+            and acts on that Group’s Turn.
+          </p>
+          <ul>
+            <li><strong>Turn Order:</strong> Heroes act first.</li>
+            <li>
+              <strong>Surprise:</strong> If there’s a risk of surprise, Heroes roll Detect.
+              Those who fail can’t act on the first Hero Turn.
+            </li>
+          </ul>
+
+          <h3>Actions</h3>
+          <p>You get one <strong>Action</strong> and a <strong>Move</strong> on your Turn.</p>
+          <ul>
+            <li><strong>Attack:</strong> Make an Attack Check with a Weapon; on a Pass, deal its damage.</li>
+            <li><strong>Cast:</strong> Cast a Spell.</li>
+            <li><strong>Hold:</strong> Save an Action or Move for an off-Turn moment.</li>
+            <li><strong>Jump:</strong> Spend half your Speed to leap up to that distance horizontally.</li>
+            <li><strong>Rush:</strong> Gain extra Speed this Turn equal to your Speed.</li>
+            <li><strong>Use:</strong> Use or interact with an Item.</li>
+          </ul>
+
+          <h3>Move</h3>
+          <p>
+            Your <strong>Speed</strong> is how far you can Move on your Turn. You can split
+            your movement around your Action however you like.
+          </p>
+
+          <h3>Flanking</h3>
+          <p>
+            If at least two Allied Beings are <strong>Close</strong> to a Foe (and the Foe is
+            no more than one size larger), that Foe is <strong>Vulnerable</strong>.
+          </p>
+
+          <h3>Defending</h3>
+          <p>You can Block or Dodge if you aren’t Incapacitated:</p>
+          <ul>
+            <li><strong>Block:</strong> Endure Save, Hindered vs Ranged Attacks.</li>
+            <li><strong>Dodge:</strong> Reflex Save, Hindered if wearing Heavy Armor.</li>
+            <li>
+              On a Pass, ignore one of the attack’s highest rolled damage dice.
+            </li>
+          </ul>
+
+          <h3>Armor, Immune, Weak</h3>
+          <ul>
+            <li><strong>Armor:</strong> Subtract from incoming Attack damage.</li>
+            <li><strong>Immune:</strong> You take no damage of that type.</li>
+            <li><strong>Weak:</strong> Ignores Armor and Immune, and rolls one extra damage die.</li>
+          </ul>
+
+          <h3>Focusing</h3>
+          <p>
+            Some effects require <strong>Focus</strong> to stay active. You can only Focus on
+            one effect at a time; starting a new Focus ends the old one.
+          </p>
+
+          <h3>Dying</h3>
+          <p>Beings die if any of the following are true:</p>
+          <ul>
+            <li>Their HP is reduced to 0.</li>
+            <li>Their body is destroyed.</li>
+            <li>They reach 5 Fatigue.</li>
+          </ul>
+          <p><strong>Dead Beings can’t regain HP.</strong></p>
+
+          <h3>Zones</h3>
+          <p>Each Enemy acts according to its assigned <strong>Zone</strong>:</p>
+          <ul>
+            <li><strong>Frontline:</strong> Moves Close and fights in Melee.</li>
+            <li>
+              <strong>Midline:</strong> Moves Close to attack, then falls back to Near.
+              At half HP or lower, it behaves like Backline.
+            </li>
+            <li><strong>Backline:</strong> Stays at Far, attacking with ranged or spells.</li>
+          </ul>
+        </article>
+
+        <!-- CASTING SPELLS -->
+        <article id="casting" class="card" style="margin-top: 1rem;">
+          <h2>Casting Spells</h2>
+
+          <p>
+            To Cast, your hands must be free or holding a spellbook, staff, or trinket.
+            When you Cast, decide:
+          </p>
+          <ol>
+            <li>
+              Are you dealing <strong>Damage</strong>, causing the <strong>Effect</strong>,
+              or both?
+            </li>
+            <li>Who you Target and how the Spell is <strong>Delivered</strong>.</li>
+            <li>How long it lasts (its <strong>Duration</strong>).</li>
+          </ol>
+
+          <ul>
+            <li>
+              <strong>Damage only or Effect only:</strong> No Mana cost (1d6 damage if using
+              the Damage Base).
+            </li>
+            <li><strong>Both Damage &amp; Effect:</strong> Costs 1 Mana.</li>
+          </ul>
+
+          <h3>When to Roll Cast Checks</h3>
+          <p>
+            You only roll a Cast Check when an <strong>unwilling Being</strong> is a Target,
+            or when keeping Focus on such a Being (see Duration).
+          </p>
+
+          <h3>Damage</h3>
+          <p>
+            Spells with a Damage Base deal 1d6 damage when cast for Damage. You can spend
+            extra Mana to add +1d6 damage per Mana.
+          </p>
+
+          <h3>Effect</h3>
+          <p>
+            The Spell’s Effect text describes what happens to the Target, unless you cast it
+            only to do damage.
+          </p>
+
+          <h3>Duration</h3>
+          <ul>
+            <li>
+              By default, Effects last until the start of your next Turn.
+            </li>
+            <li>
+              You can <strong>Focus</strong> when you Cast to extend the Spell until you
+              drop Focus.
+            </li>
+            <li>
+              If the Spell targets an unwilling Being and you want to keep Focus, you must
+              spend 1 Mana and Pass a Cast Check each Round to maintain it.
+            </li>
+            <li>
+              <strong>Continual:</strong> Lasts until dismissed and doesn’t require Focus.
+            </li>
+          </ul>
+
+          <h3>Delivery</h3>
+          <p>
+            Every Spell has a Delivery that defines how it reaches its Targets. Common types:
+          </p>
+          <ul>
+            <li><strong>Aura:</strong> A radius around you affecting chosen Targets.</li>
+            <li><strong>Cone:</strong> A short cone in front of you.</li>
+            <li><strong>Cube / Sphere:</strong> A shaped Area in sight.</li>
+            <li>
+              <strong>Line:</strong> A long strip of space (good for beams and blasts).
+            </li>
+            <li>
+              <strong>Remote:</strong> A bolt or effect centered directly on a Target.
+            </li>
+            <li>
+              <strong>Touch:</strong> A Close Target or yourself.
+            </li>
+            <li>
+              <strong>Imbue:</strong> A willing ally’s Weapon carries the Spell and can
+              trigger it on a hit.
+            </li>
+            <li>
+              <strong>Glyph:</strong> A magic mark that later triggers the Spell in a small
+              Area.
+            </li>
+          </ul>
+        </article>
+
+        <!-- TIME, DISTANCE, REST, EQUIPMENT -->
+        <article id="time-distance" class="card" style="margin-top: 1rem;">
+          <h2>Time &amp; Distance</h2>
+
+          <h3>Time</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Term</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Approx. Time</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Round</td>
+                <td style="padding:6px;">~10 seconds</td>
+                <td style="padding:6px;">Move and take an Action.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Minute</td>
+                <td style="padding:6px;">6 Rounds</td>
+                <td style="padding:6px;">A brief fight, pick a lock.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Scene</td>
+                <td style="padding:6px;">~10 minutes</td>
+                <td style="padding:6px;">Search a room, a breather.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Hour</td>
+                <td style="padding:6px;">6 Scenes</td>
+                <td style="padding:6px;">Research, downtime task.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Shift</td>
+                <td style="padding:6px;">~6 hours</td>
+                <td style="padding:6px;">Travel, Craft, Rest.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Day</td>
+                <td style="padding:6px;">4 Shifts</td>
+                <td style="padding:6px;">Recover from Fatigue.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top:1rem;">Distance</h3>
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">Term</th>
+                <th style="border-bottom:1px solid var(--border); padding:6px;">From You</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:6px;">Close</td>
+                <td style="padding:6px;">Within 5 ft.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Near</td>
+                <td style="padding:6px;">5–30 ft. away.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px;">Far</td>
+                <td style="padding:6px;">Beyond 30 ft., in sight.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article id="rest-equipment" class="card" style="margin-top: 1rem;">
+          <h2>Rest &amp; Equipment</h2>
+
+          <h3>Rest</h3>
+          <p>
+            A <strong>Rest</strong> takes a Shift of light or no activity. If you’re fed and
+            safe, you:
+          </p>
+          <ul>
+            <li>Restore HP, Luck, and Mana to their maximum.</li>
+            <li>If already at max HP, instead remove 1 Fatigue.</li>
+          </ul>
+
+          <h3>Breather</h3>
+          <p>
+            Once per Shift, you can eat a Ration and drink water to regain HP equal to your
+            <strong>Might</strong>.
+          </p>
+
+          <h3>Inventory &amp; Slots</h3>
+          <ul>
+            <li><strong>Slots:</strong> You can carry (8 + Might) Item Slots.</li>
+            <li>
+              If all Slots are full, you can’t Rush.
+            </li>
+            <li><strong>0-Slot items:</strong> 1–10 of the item share 1 Slot.</li>
+            <li><strong>1 Slot:</strong> Carried in one hand.</li>
+            <li><strong>2 Slots:</strong> Requires two hands to carry.</li>
+            <li><strong>3 Slots:</strong> Large and heavy.</li>
+          </ul>
+          <p>
+            Coins don’t take Slots. Everyday clothing worn doesn’t take Slots (Armor isn’t
+            clothing).
+          </p>
+
+          <h3>Armor (Quick)</h3>
+          <ul>
+            <li>Armor gives you an <strong>Armor Rating</strong> if it’s higher than your own.</li>
+            <li>
+              If your Might is below the armor’s requirement, you’re
+              <strong>Restrained</strong> while wearing it.
+            </li>
+            <li>
+              Equipping or removing Armor takes a <strong>Scene</strong> (~10 minutes).
+            </li>
+          </ul>
+
+          <h3>Weapons (Quick)</h3>
+          <p>Key Weapon properties and grips:</p>
+          <ul>
+            <li><strong>Brawl:</strong> Uses Brawl; can Grapple or Shove.</li>
+            <li><strong>Brutal:</strong> Crits deal +1 damage die.</li>
+            <li><strong>Cleave:</strong> Can hit two Targets for half damage each.</li>
+            <li><strong>Entangle:</strong> Can Grapple.</li>
+            <li><strong>Finesse:</strong> Can attack with Finesse.</li>
+            <li><strong>Keen:</strong> Crits on Attack Checks 1 lower.</li>
+            <li><strong>Long:</strong> +5 ft. to Range.</li>
+            <li><strong>Near:</strong> Can only target up to Near.</li>
+            <li>
+              <strong>Ranged:</strong> Uses Ranged; attacking a Close Target is Hindered.
+            </li>
+            <li>
+              <strong>Shield:</strong> Ignores Hinder when Blocking Ranged; can Shove.
+            </li>
+            <li>
+              <strong>Thrown:</strong> Can be thrown to Near, or Far with Hinder.
+            </li>
+          </ul>
+          <ul>
+            <li><strong>1H:</strong> One-handed.</li>
+            <li><strong>2H:</strong> Two-handed.</li>
+            <li><strong>F:</strong> Fist; hands count as free.</li>
+            <li><strong>V:</strong> Versatile; 1H normally, higher damage die in 2H.</li>
+          </ul>
+
+          <p>
+            <strong>Dual-Wielding:</strong> If you have two weapons equipped, you can skip
+            your Move to make an extra attack with your off-hand weapon.
+          </p>
+        </article>
+
+        <!-- STATUSES -->
+        <article id="statuses" class="card" style="margin-top: 1rem;">
+          <h2>Statuses</h2>
+
+          <p>Common Status effects and what they mean in play:</p>
+          <ul>
+            <li><strong>Berserk:</strong> Can’t Focus; only Attacks, Moves, or Rushes. No Morale Checks.</li>
+            <li><strong>Blinded:</strong> Can’t see; counts as Vulnerable.</li>
+            <li><strong>Burning:</strong> Takes listed damage at the start of its Turn until the fire is doused.</li>
+            <li><strong>Charmed:</strong> Can’t willingly attack the charmer.</li>
+            <li><strong>Confused:</strong> Checks and Saves are Hindered; Saves against its actions have Favor.</li>
+            <li><strong>Dazed:</strong> Can’t Focus or Move unless it spends an Action to do so.</li>
+            <li>
+              <strong>Fatigued:</strong> Each Fatigue takes 1 Slot; at 3+ can’t Rush; at 5, dies.
+            </li>
+            <li><strong>Frightened:</strong> −2 penalty to damage dealt.</li>
+            <li>
+              <strong>Incapacitated:</strong> Can’t Focus, act, or Move; automatically fails Might and Dexterity Checks; is Vulnerable.
+            </li>
+            <li>
+              <strong>Invisible:</strong> Can’t be seen by normal senses; creatures that can’t see it act as Blinded for Checks/Saves involving it.
+            </li>
+            <li><strong>Paralyzed:</strong> Incapacitated and Speed 0.</li>
+            <li>
+              <strong>Prone:</strong> Must spend 10 ft. of Speed to stand; can only crawl (2 ft. of Speed for 1 ft. moved), can’t Rush, and is easier to hit in Melee.
+            </li>
+            <li><strong>Restrained:</strong> Vulnerable and Speed 0.</li>
+            <li>
+              <strong>Sickened:</strong> −2 to healing received; extra rider effects may be listed.
+            </li>
+            <li>
+              <strong>Suffocating:</strong> While unable to breathe, gains Fatigue over time; Heroes roll d8 each Round vs Might, Enemies gain 1 Fatigue per Round.
+            </li>
+            <li>
+              <strong>Unconscious:</strong> Blinded, Incapacitated, and Prone; Close attacks against it always Crit.
+            </li>
+            <li>
+              <strong>Vulnerable:</strong> Its Attack Checks and Saves against Attacks are Hindered; Attacks against it have Favor.
+            </li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- RIGHT COLUMN: RULES INDEX + SEARCH + CLASSES -->
+      <aside>
+        <div class="card side-card">
+          <h3>Rules Index</h3>
+
+          <form id="search-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search this site..."
+              aria-label="Search this site"
+            />
+            <button type="button" id="search-clear" aria-label="Clear search">✕</button>
+            <button type="submit" id="search-submit">Search</button>
+          </form>
+          <br />
+
+          <div id="search-results"></div>
+
+          <div class="columns">
+            <div>
+              <div class="section-title">Hero Rules</div>
+              <ul class="link-list">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="advencement.html">Advancement</a></li>
+                <li><a href="perks.html">Perks</a></li>
+                <li><a href="magic.html">Magic</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Core Rules</div>
+              <ul class="link-list">
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="adventuring.html">Adventuring</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="downtime.html">Downtime</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Equipment</div>
+              <ul class="link-list">
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+                <li><a href="expidition.html">Expedition</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="gear.html">Gear</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h3>Quick Links</h3>
+            <ol class="contents-list">
+              <li><a href="#checks">Checks &amp; Favor</a></li>
+              <li><a href="#combat">Combat</a></li>
+              <li><a href="#npc-behavior">NPCs &amp; Morale</a></li>
+              <li><a href="#casting">Casting Spells</a></li>
+              <li><a href="#time-distance">Time &amp; Distance</a></li>
+              <li><a href="#rest-equipment">Rest &amp; Equipment</a></li>
+              <li><a href="#statuses">Statuses</a></li>
+            </ol>
+
+            <div class="quick-pills">
+              <span class="pill"><a href="#top">Back to the top</a></span>
+              <span class="pill"><a href="index.html">Main Page</a></span>
+
+              <a
+                class="pill"
+                href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Character Sheet
+              </a>
+
+              <button
+                class="pill pill-toggle"
+                id="class-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="class-dropdown"
+              >
+                Classes ▾
+              </button>
+            </div>
+
+            <div id="class-dropdown" class="class-dropdown" hidden>
+              <div class="section-title">Classes</div>
+              <ul class="class-list">
+                <li><a href="alchemist.html">Alchemist</a></li>
+                <li><a href="barbarian.html">Barbarian</a></li>
+                <li><a href="bard.html">Bard</a></li>
+                <li><a href="dancer.html">Dancer</a></li>
+                <li><a href="druid.html">Druid</a></li>
+                <li><a href="fighter.html">Fighter</a></li>
+                <li><a href="gunslinger.html">Gunslinger</a></li>
+                <li><a href="hunter.html">Hunter</a></li>
+                <li><a href="illrigger.html">Illrigger</a></li>
+                <li><a href="luminary.html">Luminary</a></li>
+                <li><a href="magus.html">Magus</a></li>
+                <li><a href="merchant.html">Merchant</a></li>
+                <li><a href="pugilist.html">Pugilist</a></li>
+                <li><a href="revelator.html">Revelator</a></li>
+                <li><a href="rogue.html">Rogue</a></li>
+                <li><a href="samurai.html">Samurai</a></li>
+                <li><a href="sanguinist.html">Sanguinist</a></li>
+                <li><a href="sorcerer.html">Sorcerer</a></li>
+                <li><a href="vanguard.html">Vanguard</a></li>
+                <li><a href="warlock.html">Warlock</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

@@ -6,7 +6,9 @@
   <title>Main Page - Vagabond</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
-  <script src="preview.js"></script>
+  <script src="search.js"></script>
+  <script src="search.js"></script>
+
 </head>
 <body>
   <div class="page">
@@ -16,14 +18,18 @@
         <a href="index.html" class="logo-title">Vagabond</a>
 
       </div>
+
+<div class="logo-block">
+        
+       <span class="pill"> <a href="quick.html" class="logo-title">Quick Rules</a> </span>
+
+      </div>
+
+ 
       <div id="top" class="tagline">
         Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
       </div>
 
-      <form class="search-box" onsubmit="return false;">
-        <span>🔍</span>
-        <input type="search" placeholder="To Be Implimented" />
-      </form>
     </header>
 
     <main>
@@ -31,6 +37,7 @@
       <section>
 
         <article id="support" class="card">
+          
           <h2>Adventure Background</h2>
           <p>
             Ragged Hollow is a quaint little town in a remote and secluded area of the Kingdom. It is best known for its flax, which is pulped into paper and used to make books at the Temple of Halcyon, or made into cloth and oil (each family owns a loom and an oil press used during the long winter evenings). The town and its 500 inhabitants are governed by a council of priests from the temple. There is no army or town guard.
@@ -112,8 +119,8 @@
           </ul>
         </article>
 
-        <article id="#about-vagabond" class="card" style="margin-top: 1rem;">
-          <h2>About Vagabond</h2>
+        <article id="about-vagabond" class="card" style="margin-top: 1rem;">
+  <h2>About Vagabond</h2>
           <p>
             Drawing on medieval romance, dungeon synth, and fifty years of classic dungeoncrawlers, Vagabond is a fast-paced action RPG where Players become daring Heroes delving into dungeons and thwarting villains.
           </p>
@@ -160,11 +167,20 @@
       <aside>
         <div class="card side-card">
           <h3>Rules Index</h3>
-          <form class="search-box" onsubmit="return false;">
-            <span>🔍</span>
-            <input type="search" placeholder="To Be Implimented" />
-          </form>
-          <p>Jump to the part of the game you need during play.</p>
+        
+           <form id="search-form">
+  <input 
+    type="text" 
+    id="search-input" 
+    placeholder="Search this site..."
+    aria-label="Search this site"
+  />
+  <button type="button" id="search-clear" aria-label="Clear search">✕</button>
+  <button type="submit" id="search-submit">Search</button>
+</form>
+<br>
+
+<div id="search-results"></div>
 
           <div class="columns">
 
@@ -201,65 +217,70 @@
               </ul>
             </div>
 
-            <div>
-              <div class="section-title">Classes</div>
-              <ul class="link-list">
-                <li><a href="alchemist.html">Alchemist</a></li>
-                <li><a href="barbarian.html">Barbarian</a></li>
-                <li><a href="bard.html">Bard</a></li>
-                <li><a href="dancer.html">Dancer</a></li>
-                <li><a href="druid.html">Druid</a></li>
-                <li><a href="fighter.html">Fighter</a></li>
-                <li><a href="gunslinger.html">Gunslinger</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <div class="section-title">Classes</div>
-              <ul class="link-list">
-                <li><a href="hunter.html">Hunter</a></li>
-                <li><a href="illrigger.html">Illrigger</a></li>
-                <li><a href="luminary.html">Luminary</a></li>
-                <li><a href="magus.html">Magus</a></li>
-                <li><a href="merchant.html">Merchant</a></li>
-                <li><a href="pugilist.html">Pugilist</a></li>
-                <li><a href="revelator.html">Revelator</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <div class="section-title">Classes</div>
-              <ul class="link-list">
-                <li><a href="rogue.html">Rogue</a></li>
-                <li><a href="samurai.html">Samurai</a></li>
-                <li><a href="sanguinist.html">Sanguinist</a></li>
-                <li><a href="sorcerer.html">Sorcerer</a></li>
-                <li><a href="vanguard.html">Vanguard</a></li>
-                <li><a href="warlock.html">Warlock</a></li>
-                <li><a href="wizard.html">Wizard</a></li>
-              </ul>
-            </div>
+            
           </div>
 
-          <div class="card side-floating-left">
-            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
-            <ol class="contents-list">
-              <li><a href="#support">Adventure Background</a></li>
-              <li><a href="#ancestries">Ancestries</a></li>
-              <li><a href="#about-vagabond">About Vagabond</a></li>
-              <li><a href="#about-srd">What is OSR</a></li>
-              <li><a href="#generators">Danger Level</a></li>
-            </ol>
+          <div>
+  <h3>Quick Links</h3>
+  <ol class="contents-list">
+    <li><a href="#support">Adventure Background</a></li>
+    <li><a href="#ancestries">Ancestries</a></li>
+    <li><a href="#about-vagabond">About Vagabond</a></li>
+    <li><a href="#about-srd">What is OSR</a></li>
+    <li><a href="#generators">Danger Level</a></li>
+  </ol>
 
-            <a class="pill"
-               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
-               target="_blank"
-               rel="noopener noreferrer">
-              Character Sheet
-            </a>
-          </div>
-        </div>
-      </aside>
+  <div class="quick-pills">
+    <span class="pill"><a href="#top">Back to the top</a></span>
+    <span class="pill"><a href="quick.html">Quick Rules</a></span>
+
+    <a class="pill"
+       href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+       target="_blank"
+       rel="noopener noreferrer">
+      Character Sheet
+    </a>
+
+    
+
+    <!-- NEW: Classes dropdown trigger -->
+    <button class="pill pill-toggle"
+            id="class-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="class-dropdown">
+      Classes ▾
+    </button>
+  </div>
+
+  <!-- NEW: Classes dropdown menu -->
+  <div id="class-dropdown" class="class-dropdown" hidden>
+    <div class="section-title">Classes</div>
+    <ul class="class-list">
+      <li><a href="alchemist.html">Alchemist</a></li>
+      <li><a href="barbarian.html">Barbarian</a></li>
+      <li><a href="bard.html">Bard</a></li>
+      <li><a href="dancer.html">Dancer</a></li>
+      <li><a href="druid.html">Druid</a></li>
+      <li><a href="fighter.html">Fighter</a></li>
+      <li><a href="gunslinger.html">Gunslinger</a></li>
+      <li><a href="hunter.html">Hunter</a></li>
+      <li><a href="illrigger.html">Illrigger</a></li>
+      <li><a href="luminary.html">Luminary</a></li>
+      <li><a href="magus.html">Magus</a></li>
+      <li><a href="merchant.html">Merchant</a></li>
+      <li><a href="pugilist.html">Pugilist</a></li>
+      <li><a href="revelator.html">Revelator</a></li>
+      <li><a href="rogue.html">Rogue</a></li>
+      <li><a href="samurai.html">Samurai</a></li>
+      <li><a href="sanguinist.html">Sanguinist</a></li>
+      <li><a href="sorcerer.html">Sorcerer</a></li>
+      <li><a href="vanguard.html">Vanguard</a></li>
+      <li><a href="warlock.html">Warlock</a></li>
+      <li><a href="wizard.html">Wizard</a></li>
+    </ul>
+  </div>
+</div>
     </main>
   </div>
 </body>

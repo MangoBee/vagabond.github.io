@@ -6,23 +6,30 @@
   <link rel="icon" type="image/x-icon" href="cart_logo.webp">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
-  <script src="preview.js"></script>
+  <script src="search.js"></script>
 </head>
 <body>
   <div class="page">
-    <header class="sticky-block">
+    <header>
       <div class="logo-block">
-        <div class="logo-subtitle">Ragged Hollow</div>
+        <div  class="logo-subtitle">Ragged Hollow</div>
         <a href="index.html" class="logo-title">Vagabond</a>
+
       </div>
+
+<div class="logo-block">
+        
+       <span class="pill"> <a href="quick.html" class="logo-title">Quick Rules</a> </span>
+
+      </div>
+
+ 
       <div id="top" class="tagline">
         Vagabond is a tabletop roleplaying game built off the foundations of DnD B/X, Pathfinder, Dragonbane, Errant, Knave, Cairn, Into the Odd, Shadowdark, Shadow of the Demon Lord, and other OSR-style games.
       </div>
-      <form class="search-box" onsubmit="return false;">
-        <span>🔍</span>
-        <input type="search" placeholder="To Be Implimented" />
-      </form>
+
     </header>
+
 
     <main>
       <section>
@@ -151,21 +158,32 @@
       </section>
 
       <!-- SIDEBAR -->
+           <!-- RIGHT COLUMN: QUICK INDEX -->
       <aside>
-        <div class="card side-card"> 
+        <div class="card side-card">
           <h3>Rules Index</h3>
-          <form class="search-box" onsubmit="return false;">
-            <span>🔍</span>
-            <input type="search" placeholder="To Be Implimented" />
-          </form>
-          <p>Jump to the part of the game you need during play.</p>
+        
+           <form id="search-form">
+  <input 
+    type="text" 
+    id="search-input" 
+    placeholder="Search this site..."
+    aria-label="Search this site"
+  />
+  <button type="button" id="search-clear" aria-label="Clear search">✕</button>
+  <button type="submit" id="search-submit">Search</button>
+</form>
+<br>
+
+<div id="search-results"></div>
 
           <div class="columns">
+
             <div>
               <div class="section-title">Hero Rules</div>
               <ul class="link-list">
                 <li><a href="index.html">Main Page</a></li>
-                <li><a href="skills.html">Stats &amp; Skills</a></li>
+                <li><a href="skills.html">Stats & Skills</a></li>
                 <li><a href="advencement.html">Advancement</a></li>
                 <li><a href="perks.html">Perks</a></li>
                 <li><a href="magic.html">Magic</a></li>
@@ -194,64 +212,70 @@
               </ul>
             </div>
 
-            <div>
-              <div class="section-title">Classes</div>
-              <ul class="link-list">
-                <li><a href="alchemist.html">Alchemist</a></li>
-                <li><a href="barbarian.html">Barbarian</a></li>
-                <li><a href="bard.html">Bard</a></li>
-                <li><a href="dancer.html">Dancer</a></li>
-                <li><a href="druid.html">Druid</a></li>
-                <li><a href="fighter.html">Fighter</a></li>
-                <li><a href="gunslinger.html">Gunslinger</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <div class="section-title">Classes</div>
-              <ul class="link-list">
-                <li><a href="hunter.html">Hunter</a></li>
-                <li><a href="illrigger.html">Illrigger</a></li>
-                <li><a href="luminary.html">Luminary</a></li>
-                <li><a href="magus.html">Magus</a></li>
-                <li><a href="merchant.html">Merchant</a></li>
-                <li><a href="pugilist.html">Pugilist</a></li>
-                <li><a href="revelator.html">Revelator</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <div class="section-title">Classes</div>
-              <ul class="link-list">
-                <li><a href="rogue.html">Rogue</a></li>
-                <li><a href="samurai.html">Samurai</a></li>
-                <li><a href="sanguinist.html">Sanguinist</a></li>
-                <li><a href="sorcerer.html">Sorcerer</a></li>
-                <li><a href="vanguard.html">Vanguard</a></li>
-                <li><a href="warlock.html">Warlock</a></li>
-                <li><a href="wizard.html">Wizard</a></li>
-              </ul>
-            </div>
+            
           </div>
 
-          <div class="card side-floating-left">
-            <h3>Quick Links <span class="pill"><a href="#top">Back to the top</a></span></h3>
-            <ol class="contents-list">
+          <div>
+  <h3>Quick Links</h3>
+  <ol class="contents-list">
               <li><a href="#gunslinger">Gunslinger</a></li>
               <li><a href="#class-features-table">Class Features Table</a></li>
               <li><a href="#class-features">Class Features</a></li>
             </ol>
 
-            <a class="pill"
-               href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
-               target="_blank"
-               rel="noopener noreferrer">
-              Character Sheet
-            </a>
-          </div>
-        </div>
-      </aside>
+        <div class="quick-pills">
+    <span class="pill"><a href="#top">Back to the top</a></span>
+    <span class="pill"><a href="quick.html">Quick Rules</a></span>
+
+    <a class="pill"
+       href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
+       target="_blank"
+       rel="noopener noreferrer">
+      Character Sheet
+    </a>
+
+    
+
+    <!-- NEW: Classes dropdown trigger -->
+    <button class="pill pill-toggle"
+            id="class-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="class-dropdown">
+      Classes ▾
+    </button>
+  </div>
+
+  <!-- NEW: Classes dropdown menu -->
+  <div id="class-dropdown" class="class-dropdown" hidden>
+    <div class="section-title">Classes</div>
+    <ul class="class-list">
+      <li><a href="alchemist.html">Alchemist</a></li>
+      <li><a href="barbarian.html">Barbarian</a></li>
+      <li><a href="bard.html">Bard</a></li>
+      <li><a href="dancer.html">Dancer</a></li>
+      <li><a href="druid.html">Druid</a></li>
+      <li><a href="fighter.html">Fighter</a></li>
+      <li><a href="gunslinger.html">Gunslinger</a></li>
+      <li><a href="hunter.html">Hunter</a></li>
+      <li><a href="illrigger.html">Illrigger</a></li>
+      <li><a href="luminary.html">Luminary</a></li>
+      <li><a href="magus.html">Magus</a></li>
+      <li><a href="merchant.html">Merchant</a></li>
+      <li><a href="pugilist.html">Pugilist</a></li>
+      <li><a href="revelator.html">Revelator</a></li>
+      <li><a href="rogue.html">Rogue</a></li>
+      <li><a href="samurai.html">Samurai</a></li>
+      <li><a href="sanguinist.html">Sanguinist</a></li>
+      <li><a href="sorcerer.html">Sorcerer</a></li>
+      <li><a href="vanguard.html">Vanguard</a></li>
+      <li><a href="warlock.html">Warlock</a></li>
+      <li><a href="wizard.html">Wizard</a></li>
+    </ul>
+  </div>
+</div>
     </main>
   </div>
 </body>
 </html>
+
