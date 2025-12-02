@@ -89,7 +89,7 @@
 
           <p>
             Darkness causes those without a Sense capable of otherwise seeing to act as
-            <a href="#statuses">Blinded</a>.
+            <a href="adventuring.html#blinded">Blinded</a>.
           </p>
 
           <h3>Senses</h3>
@@ -229,7 +229,7 @@
                 <td style="padding:6px;">Climb</td>
                 <td style="padding:6px;">
                   Moves at full Speed while climbing. Beings without it are
-                  <a href="#statuses">Vulnerable</a> while climbing.
+                  <a href="adventuring.html#vulnerable">Vulnerable</a> while climbing.
                 </td>
               </tr>
               <tr>
@@ -255,7 +255,7 @@
                 <td style="padding:6px;">Swim</td>
                 <td style="padding:6px;">
                   Moves at full Speed while swimming. Beings without it are
-                  <a href="#statuses">Vulnerable</a> while in liquid deeper than half their
+                  <a href="adventuring.html#vulnerable">Vulnerable</a> while in liquid deeper than half their
                   height.
                 </td>
               </tr>
@@ -402,10 +402,10 @@
           <h3>Flanking</h3>
           <p>
             If at least two Allied Beings are Close to a Foe, the Foe is
-            <a href="#statuses">Vulnerable</a> if it is no more than one size larger than
+            <a href="adventuring.html#vulnerable">Vulnerable</a> if it is no more than one size larger than
             the Allies.
           </p>
-
+<section id="grappling">
           <h3>Grappling</h3>
           <p>
             Physically causing a Target to be Restrained by using your body is
@@ -417,12 +417,12 @@
           <h4>Beginning a Grapple</h4>
           <p>
             <strong>Heroes:</strong> Attack Action and passed Brawl Check to begin the
-            <a href="skills.html#might">Grapple</a>.
+            <a href="skills.html#brawl">Grapple</a>.
           </p>
           <p>
             <strong>Enemies:</strong> Those that employ grappling will do so as a Melee
             Attack that Restrains, forcing the Hero to
-            <a href="encounters.html#combat">defend</a>.
+            <a href="encounters.html#defending">defend</a>.
           </p>
 
           <h4>Ending a Grapple</h4>
@@ -435,6 +435,8 @@
             Status, forcing the Hero to make a Brawl Check to maintain it. On a fail, the
             Restrained Status ends and the Being regains half their Speed.
           </p>
+
+          </section>
         </article>
 
         <!-- 7. REST -->
@@ -605,15 +607,14 @@
 
           <h3>Berserk</h3>
           <p>
-            It can't Focus, and it can only Attack, Move, and Rush. It doesn't make
-            Morale Checks, and it can't be Frightened.
+            It can’t take the Cast Action or Focus, it can’t be Frightened, and it doesn’t make Morale Checks.
           </p>
-
+<section id="blinded">
           <h3>Blinded</h3>
           <p>
             It can’t see and is <strong>Vulnerable</strong>.
           </p>
-
+</section>
           <h3>Burning</h3>
           <p>
             A die roll indicates damage it takes at the start of its Turns, unless an
@@ -634,17 +635,18 @@
           <p>
             It can't Focus or Move unless it uses an Action to do so.
           </p>
-
+<section id="fatigued">
           <h3>Fatigued</h3>
           <p>
             Fatigue is measured from 0 to 5. With 1 or more Fatigue, the following rules apply:
           </p>
+          
           <ul>
             <li>Each Fatigue occupies an Item Slot.</li>
             <li>At 3 or more Fatigue, it can't Rush.</li>
             <li>At 5 Fatigue, it dies.</li>
           </ul>
-
+</section>
           <h3>Frightened</h3>
           <p>
             It has a -2 penalty to damage it deals.
@@ -714,14 +716,13 @@
             <li>It is Blinded, Incapacitated, and Prone.</li>
             <li>Close Attacks Targeting it always Crit.</li>
           </ul>
-
+<section id="vulnerable">
           <h3>Vulnerable</h3>
           <p>
-            Its Attack Checks, and Saves against Attacks have Hinder. Attacks against it
-            have Favor.
+            Its attacks and its Saves against attacks have Hinder. Attacks targeting it and Saves against its attacks have Favor.
           </p>
         </article>
-
+</section>
       </section>
 
         <!-- RIGHT COLUMN: QUICK INDEX -->
@@ -802,8 +803,7 @@
 
     <a class="pill"
        href="https://docs.google.com/spreadsheets/d/1Nn0EfIQsRmxDNYHhy1iN4Bbeqkfppi-ka1QRrDO1iSE/edit?usp=sharing"
-       target="_blank"
-       rel="noopener noreferrer">
+       >
       Character Sheet
     </a>
 

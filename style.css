@@ -18,6 +18,11 @@
   font-size: 0.9rem;
 }
 
+[id] {
+  scroll-margin-top: 25vh; /* push the target downward */
+  scroll-margin-bottom: 25vh; /* optional, helps true centering */
+}
+
 #search-input {
   flex: 1;
   background: transparent;
